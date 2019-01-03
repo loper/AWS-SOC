@@ -1,0 +1,303 @@
+{
+    "item": {
+        "id": 115152,
+        "asset_id": "18_400_24886_0008",
+        "vdp_id": 1400,
+        "video360": 0,
+        "serie_title": "Nowy Gad\u017cet",
+        "title": "",
+        "lead": "Drobne rzeczy u\u0142atwiaj\u0105ce \u017cycie, innowacyjne technologie poszukuj\u0105ce swojego miejsca na rynku, przyjemne i po\u017cyteczne przedmioty, a tak\u017ce sprz\u0119towe wpadki nazywane bez ogr\u00f3dek wpadkami - to wszystko zobaczycie w jedenastym sezonie programu Kuby Klawitera. Bez \u015bciemy, sponsorowanych test\u00f3w i lukrowania rzeczywisto\u015bci - m\u00f3wimy jak jest!",
+        "content": "",
+        "thumbnail": [
+            {
+                "url": "p24\/i\/fc528592c3858f90196fbfacc814f235\/cdffe736-9e43-4d61-87d5-401e5b7a1b2b.jpg",
+                "srcx": "77\/100",
+                "srcy": "100\/100",
+                "srcw": "56\/100",
+                "srch": "84\/100",
+                "ratioX": 1,
+                "ratioY": 1,
+                "type": 1,
+                "text": ""
+            }
+        ],
+        "thumbnail_urls": [],
+        "channel_logo": [
+            {
+                "url": "p24\/i\/c4492cbe90fbdbf88a5aec486aa81ed5\/b14ec57e-e348-4114-b283-84302eaf3996.png",
+                "srcx": "0\/1",
+                "srcy": "0\/1",
+                "srcw": "1\/1",
+                "srch": "1\/1",
+                "ratioX": 1,
+                "ratioY": 1,
+                "type": 0,
+                "text": ""
+            }
+        ],
+        "branding_zone_photo": [
+            {
+                "url": "p24\/i\/d010396ca8abf6ead8cacc2c2f2f26c7\/6ea216d1-e86d-4906-b1c0-621dfd3c6b19.jpg",
+                "srcx": "0\/1",
+                "srcy": "0\/1",
+                "srcw": "1\/1",
+                "srch": "1\/1",
+                "ratioX": 1,
+                "ratioY": 1,
+                "type": 1,
+                "text": ""
+            }
+        ],
+        "episode": 8,
+        "season": 11,
+        "next_item_id": null,
+        "run_time": "00:23:17",
+        "end_credits_start": "00:22:51",
+        "has_product_placement": 0,
+        "rating": "12",
+        "show_rating": 1,
+        "show_product_placement": 1,
+        "show_adds": 1,
+        "start_date": "2018-10-21 14:00",
+        "end_date": "2048-12-31 23:59",
+        "release_year": null,
+        "credits": [],
+        "keywords": [
+            {
+                "id": "73481",
+                "name": "kuba klawiter",
+                "slug": "kuba-klawiter"
+            },
+            {
+                "id": "115617",
+                "name": "testy gad\u017cet\u00f3w",
+                "slug": "testy-gadzetow"
+            },
+            {
+                "id": "117038",
+                "name": "program o gad\u017cetach",
+                "slug": "program-o-gadzetach"
+            },
+            {
+                "id": "160773",
+                "name": "program TVN Turbo",
+                "slug": "program-tvn-turbo"
+            }
+        ],
+        "type_episode": "normal",
+        "countries": [
+            {
+                "id": "1",
+                "alias": "Polska",
+                "name": "Polska"
+            }
+        ],
+        "payable": 1,
+        "tmobile": "yes",
+        "package_contractors": [
+            "TMOBILE",
+            "STANDARD",
+            "SAMSUNG",
+            "ORANGE",
+            "AGORA"
+        ],
+        "limit_premiere": 0,
+        "protected": 1,
+        "devices_limit": 1,
+        "numbering_episodes": 1,
+        "episode_one": 0,
+        "brandingzone_photo_application_horizontal": null,
+        "brandingzone_photo_application_vertical": null,
+        "videos": {
+            "main": {
+                "sprites_path": "http:\/\/r.dcs.redcdn.pl\/file\/o2\/tvnplayer\/vod\/18_400_24886_0008\/LIBCODER_STRIPE\/e1ad312a-0854-440f-8c68-c2652c6ff1e2",
+                "aspect_ratio": "16:9",
+                "gstream": "tvn_terminal=Panasonic&tvn_platform=ConnectedTV&tvn_origin=tvn&tvn_vod_trailer=0&tvn_content_source=tvn_turbo&tvn_vod_serie=nowy_gadzet&tvn_svod_user=0&tvn_zone=tvn_turbo&tvn_vod_category=200&tvn_vod_category=202&tvn_vod_season=11&tvn_vod_prepremiere=0&tvn_vod_episode=8&tvn_parental_rating=12&tvn_continue=no&tvn_price=yes&tvn_collection=151&tvn_collection=195&tvn_collection=266&tvn_collection=381&tvn_login=no&tvn_black=0&tvn_vod_package=player_plus,player_live_tv,extra_solo&tvn_traffic_category=kobieta,menedzer,mezczyzna&tvn_device_screen_height=&tvn_device_type=&tvn_device_screen_width=",
+                "gstream_id": "18_400_24886_0008",
+                "adserver": "http:\/\/tvn.adocean.pl\/ad.xml?aocodetype=1\/predur=240\/postdur=240\/mid1dur=240\/mid2dur=240\/mid3dur=240\/overdur=2000\/tvn_vod_trailer=0\/catchup_no_fee=0\/midcnt=1\/tvn_vod_serie=nowy_gadzet\/tvn_vod_season=11\/tvn_vod_prepremiere=0\/tvn_vod_episode=8\/tvn_vod_wonid=TVN-11-005,18_400_24886_0008\/vod_p_r=12\/tvn_vod_category=200,202\/tvn_vod_traffic_category=kobieta,menedzer,mezczyzna\/tvn_collection=151,195,266,381\/tvn_content_source=tvn_turbo\/tvn_price=yes\/tvn_zone=tvn_turbo\/id=x.bh9h2KrIUMTAyJ3_x6oWS8o7iCopJvXxkWJiTxOT7.e7\/tvn_login=no\/tvn_device_type=\/tvn_device_screen_width=\/tvn_device_screen_height=",
+                "ad_breakes": [
+                    "00:15:33"
+                ],
+                "video_content": [],
+                "video_content_license_type": null,
+                "video_content_error": 10407,
+                "hardware_decoding": 1,
+                "video_content_error_message": "Zarz\u0105dzaj subskrypcj\u0105 na www.player.pl",
+                "video_content_licenserenew_url": null
+            }
+        },
+        "trailer_url": null,
+        "user_tmobile_msisdn_hash": null,
+        "original_distribution": "TVN",
+        "original_in_tv": "TVN Turbo, niedziela 13:30",
+        "firstaired": "",
+        "is_playerplus": 0,
+        "is_ncp": 0,
+        "logo": "\/bundles\/tvnplayer\/img\/api-logo\/player\/logo-tv.png?1065",
+        "trailer_adserver": "http:\/\/tvn.adocean.pl\/ad.xml?aocodetype=1\/predur=46\/tvn_vod_trailer=1\/catchup_no_fee=0\/midcnt=0\/tvn_vod_serie=nowy_gadzet\/tvn_vod_season=11\/tvn_vod_prepremiere=0\/tvn_vod_episode=8\/tvn_vod_wonid=TVN-11-005,18_400_24886_0008\/vod_p_r=12\/tvn_vod_category=200,202\/tvn_vod_traffic_category=kobieta,menedzer,mezczyzna\/tvn_collection=151,195,266,381\/tvn_content_source=tvn_turbo\/tvn_price=yes\/tvn_zone=tvn_turbo\/id=x.bh9h2KrIUMTAyJ3_x6oWS8o7iCopJvXxkWJiTxOT7.e7\/tvn_login=no\/tvn_device_type=\/tvn_device_screen_width=\/tvn_device_screen_height="
+    },
+    "accessPackages": {
+        "items": [
+            {
+                "id": 3,
+                "title": "Kids",
+                "description": "",
+                "pro_id": 0,
+                "vat_id": 0,
+                "price_min": 1,
+                "price_amount": 1,
+                "price_min_vat_id": 1,
+                "count_streams": 0,
+                "count_movies": "90",
+                "count_programs": "79",
+                "count_cartoons": "14",
+                "count_series": "3",
+                "type": "ALL_PROGRAMS",
+                "code": "KIDS",
+                "contractor": "TMOBILE",
+                "photo_main": [
+                    {
+                        "url": "p24\/i\/b265ce60fe4c5384e622b09eb829b8df\/13f93e80-6368-11e4-bd20-0025b511229e.png",
+                        "srcx": "0\/1",
+                        "srcy": "0\/1",
+                        "srcw": "1\/1",
+                        "srch": "1\/1",
+                        "ratioX": 1,
+                        "ratioY": 1,
+                        "type": 0,
+                        "text": ""
+                    }
+                ],
+                "photo_cover": [
+                    {
+                        "url": "p24\/i\/2dffbc474aa176b6dc957938c15d0c8b\/c207f5ee-794c-11e4-bbfe-0025b511226e.jpg",
+                        "srcx": "0\/1",
+                        "srcy": "0\/1",
+                        "srcw": "1\/1",
+                        "srch": "1\/1",
+                        "ratioX": 1,
+                        "ratioY": 1,
+                        "type": 1,
+                        "text": ""
+                    }
+                ],
+                "time_product": [
+                    {
+                        "id": 2,
+                        "vap_id": 3,
+                        "vat_id": 1,
+                        "ppr_id": 25,
+                        "vap_time": {
+                            "id": 1,
+                            "title": "24h",
+                            "codename": "24_hours"
+                        },
+                        "payment_product": {
+                            "id": 25,
+                            "name": "Kids - 0.01z\u0142",
+                            "desc": "TMPL-KIDS",
+                            "type": "PRODUCT_VOD",
+                            "type_value": "1P",
+                            "own_id": "10100",
+                            "pay_type": "TMOBILE",
+                            "pay_type_sms_price": 0,
+                            "pay_type_online_price": 0,
+                            "pay_type_apple_price": 0,
+                            "pay_type_android_price": 0,
+                            "pay_type_windowsphone_price": 0
+                        }
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Multi",
+                "description": "",
+                "pro_id": 0,
+                "vat_id": 0,
+                "price_min": 2,
+                "price_amount": 1,
+                "price_min_vat_id": 1,
+                "count_streams": 0,
+                "count_movies": "90",
+                "count_programs": "79",
+                "count_cartoons": "14",
+                "count_series": "3",
+                "type": "ALL_PROGRAMS",
+                "code": "MULTI",
+                "contractor": "TMOBILE",
+                "photo_main": [
+                    {
+                        "url": "p24\/i\/b265ce60fe4c5384e622b09eb829b8df\/a9f6b570-6368-11e4-97bf-0025b511229e.png",
+                        "srcx": "0\/1",
+                        "srcy": "0\/1",
+                        "srcw": "1\/1",
+                        "srch": "1\/1",
+                        "ratioX": 1,
+                        "ratioY": 1,
+                        "type": 0,
+                        "text": ""
+                    }
+                ],
+                "photo_cover": [
+                    {
+                        "url": "p24\/i\/2dffbc474aa176b6dc957938c15d0c8b\/c2795004-794c-11e4-8682-0025b511226e.jpg",
+                        "srcx": "0\/1",
+                        "srcy": "0\/1",
+                        "srcw": "1\/1",
+                        "srch": "1\/1",
+                        "ratioX": 1,
+                        "ratioY": 1,
+                        "type": 1,
+                        "text": ""
+                    }
+                ],
+                "time_product": [
+                    {
+                        "id": 3,
+                        "vap_id": 4,
+                        "vat_id": 1,
+                        "ppr_id": 26,
+                        "vap_time": {
+                            "id": 1,
+                            "title": "24h",
+                            "codename": "24_hours"
+                        },
+                        "payment_product": {
+                            "id": 26,
+                            "name": "Multi - 0.02z\u0142",
+                            "desc": "TMPL-MULTI",
+                            "type": "PRODUCT_VOD",
+                            "type_value": "1P",
+                            "own_id": "10200",
+                            "pay_type": "TMOBILE",
+                            "pay_type_sms_price": 0,
+                            "pay_type_online_price": 0,
+                            "pay_type_apple_price": 0,
+                            "pay_type_android_price": 0,
+                            "pay_type_windowsphone_price": 0
+                        }
+                    }
+                ]
+            }
+        ],
+        "regulation": {
+            "id": "115",
+            "title": "ZA\u0141\u0104CZNIK DO REGULAMINU SERWISU INTERNETOWEGO TVN",
+            "lead": "\n",
+            "content": "<p><strong>ZA\u0141\u0104CZNIK DO REGULAMINU SERWISU INTERNETOWEGO TVN<\/strong><\/p>\n<p><strong> <\/strong><\/p>\n<p>\u00a0<\/p>\n<p style=\"text-align:center;\"><strong>\u00a7 1. <\/strong><strong>Postanowienia wst\u0119pne<\/strong><strong> <\/strong><\/p>\n<p><strong> <\/strong><\/p>\n<p>1. Niniejszy Regulamin Player.pl. okre\u015bla szczeg\u00f3\u0142owe zasady \u015bwiadczenia przez Administratora tj. TVN S.A. z siedzib\u0105 w Warszawie (kod poczt. 02-952) przy ul. Wiertniczej 166, zarejestrowana w Krajowym Rejestrze S\u0105dowym - rejestrze przedsi\u0119biorc\u00f3w prowadzonym przez S\u0105d Rejonowy dla m.st. Warszawy, XIII Wydzia\u0142 Gospodarczy Krajowego Rejestru S\u0105dowego pod numerem KRS 0000213007, NIP: 951-00-57-883, Us\u0142ug w Serwisie Player.pl zlokalizowanym pod adresem internetowym <a href=\"http:\/\/player.pl\/\">http:\/\/player.pl<\/a><\/p>\n<p>2. Regulamin Player.pl stanowi Za\u0142\u0105cznik do Regulaminu, o kt\u00f3rym mowa w \u00a7 2 pkt 2 niniejszego dokumentu i \u0142\u0105cznie z nim okre\u015bla zasady \u015bwiadczenia przez Administratora Us\u0142ug w Serwisie Player.pl.<\/p>\n<p>\u00a0<\/p>\n<p>3. Podstawowym przedmiotem dzia\u0142alno\u015bci Serwisu Player.pl jest udost\u0119pnianie na Platformach Sprz\u0119towych Materia\u0142\u00f3w oraz innych Us\u0142ug, w szczeg\u00f3lno\u015bci Us\u0142ugi VoD.<\/p>\n<p>\u00a0<\/p>\n<p>4. Regulamin Player.pl udost\u0119pniany jest nieodp\u0142atnie dla ka\u017cdego U\u017cytkownika pod adresem internetowym <a href=\"http:\/\/player.pl\/regulamin.pdf\">http:\/\/player.pl\/regulamin.pdf<\/a> w spos\u00f3b, kt\u00f3ry umo\u017cliwia pobranie, utrwalenie i wydrukowanie Regulaminu.<\/p>\n<p>\u00a0<\/p>\n<p>5. U\u017cytkownik Player.pl przez skorzystaniem z Us\u0142ug Odp\u0142atnych w Serwisie Player.pl potwierdza, \u017ce zapozna\u0142 si\u0119 z tre\u015bci\u0105 Regulaminu Player.pl w drodze odr\u0119bnego o\u015bwiadczenia woli sk\u0142adanego w formie elektronicznej poprzez odznaczenie odpowiedniego pola wyboru w Serwisie Player.pl.<\/p>\n<p><strong> <\/strong><\/p>\n<p style=\"text-align:center;\"><strong>\u00a7 2. <\/strong><strong>Definicje<\/strong><\/p>\n<p><strong> <\/strong><\/p>\n<p>Wszelkie wyrazy pisane wielk\u0105 liter\u0105 maj\u0105 znaczenie zdefiniowane w Regulaminie, a te wyrazy pisane wielka liter\u0105, kt\u00f3rych znaczenie zosta\u0142o zdefiniowane poni\u017cej, nale\u017cy rozumie\u0107 w nast\u0119puj\u0105cy spos\u00f3b:<\/p>\n<p>\u00a0<\/p>\n<p>1)\u00a0\u00a0\u00a0\u00a0\u00a0 <strong>Platformy Sprz\u0119towe \u2013<\/strong> \u015brodowiska programistyczne, na kt\u00f3rych zgodnie z warunkami technicznymi okre\u015blonymi Regulaminem Player.pl dost\u0119pny jest Serwis Player.pl, w szczeg\u00f3lno\u015bci komputery i urz\u0105dzenia przeno\u015bne z zainstalowan\u0105 Aplikacj\u0105 Mobiln\u0105 oraz platformy TV smart tv, STB i konsole;<\/p>\n<p>\u00a0<\/p>\n<p>2)\u00a0\u00a0\u00a0\u00a0\u00a0 <strong>Regulamin<\/strong> - regulamin okre\u015blaj\u0105cy prawa i obowi\u0105zki Administratora i U\u017cytkownika korzystaj\u0105cego z Serwisu internetowego dost\u0119pnego pod adresami domenowymi tvn.pl, tvnstyle.pl, tvnturbo.pl, tvn7.pl, itvn.pl, tvn24.pl, tvn24bis.pl, kulinarni.pl, Player.pl lub ich rozwini\u0119ciami, stanowi\u0105cy regulamin, o kt\u00f3rym mowa w art. 8 Ustawy o \u015bwiadczeniu us\u0142ug, \u00a0drog\u0105 elektroniczn\u0105, dost\u0119pny pod adresem internetowym <a href=\"https:\/\/konto.tvn.pl\/pdf\/regulamin.pdf\">https:\/\/konto.tvn.pl\/pdf\/regulamin.pdf<\/a>;<\/p>\n<p>\u00a0<\/p>\n<p>3)\u00a0\u00a0\u00a0\u00a0\u00a0 <strong>Regulamin Player.pl <\/strong>- regulamin stanowi\u0105cy Za\u0142\u0105cznik do Regulaminu, okre\u015blaj\u0105cy szczeg\u00f3\u0142owe prawa i obowi\u0105zki Administratora i U\u017cytkownik\u00f3w Serwisu Player.pl;<\/p>\n<p>\u00a0<\/p>\n<p>4)\u00a0\u00a0\u00a0\u00a0\u00a0 <strong>Serwis Player.pl<\/strong> - serwis internetowy nale\u017c\u0105cy do Administratora, dost\u0119pny pod adresem internetowym http:\/\/player.pl na Platformach Sprz\u0119towych;<\/p>\n<p>\u00a0<\/p>\n<p>5)\u00a0\u00a0\u00a0\u00a0\u00a0 <strong>U\u017cytkownik Player.pl<\/strong> \u2013 U\u017cytkownik korzystaj\u0105cy z Serwisu Player.pl, przebywaj\u0105cy na terytorium Rzeczpospolitej Polskiej.<\/p>\n<p>\u00a0<\/p>\n<p style=\"text-align:center;\"><strong>\u00a7 3. <\/strong><strong>Umowy dotycz\u0105cej korzystania z Serwisu Player.pl<\/strong><\/p>\n<p><strong> <\/strong><\/p>\n<p>1. W zakresie nieuregulowanym w Regulaminie Player.pl do zasad korzystania z Serwisu Player.pl stosuje si\u0119 Regulamin.<\/p>\n<p>\u00a0<\/p>\n<p>2. Uiszczenie Ceny za Us\u0142ug\u0119 Odp\u0142atn\u0105 nast\u0119puje w spos\u00f3b wybrany przez U\u017cytkownika Player.pl za po\u015brednictwem Operator\u00f3w P\u0142atno\u015bci lub operator\u00f3w telefonii GSM przez:<\/p>\n<p>\u00a0<\/p>\n<p>1)\u00a0\u00a0\u00a0\u00a0\u00a0 wys\u0142anie SMS Premium odpowiedniej tre\u015bci na numer telefonu zgodnie z instrukcjami wskazanymi przy Us\u0142udze;<\/p>\n<p>2)\u00a0\u00a0\u00a0\u00a0\u00a0 dokonanie p\u0142atno\u015bci on-line, pozytywnie zweryfikowanej przez Operatora P\u0142atno\u015bci.<\/p>\n<p>\u00a0<\/p>\n<p>3. Paragony fiskalne za Us\u0142ug\u0119 Odp\u0142atn\u0105, gdy Cena zosta\u0142a uiszczona przelewem mo\u017cna odbiera\u0107 w siedzibie TVN Media: ul. Wiertnicza 166, 02-952 Warszawa, Dzia\u0142 Dystrybucji, w dni robocze w godzinach od 10:00 do 16:00.<\/p>\n<p>\u00a0<\/p>\n<p style=\"text-align:center;\"><strong>\u00a7 4. <\/strong><strong>Warunki szczeg\u00f3lne korzystania z Serwisu Player.pl<\/strong><\/p>\n<p>\u00a0<\/p>\n<p>1. U\u017cytkownik Player.pl mo\u017ce korzysta\u0107 z ca\u0142o\u015bci Serwisu Player.pl przebywaj\u0105c na terytorium Rzeczypospolitej Polskiej.<\/p>\n<p>\u00a0<\/p>\n<p>2. Dost\u0119pno\u015b\u0107 Serwisu Player.pl dla U\u017cytkownika Player.pl przebywaj\u0105cego poza terytorium Rzeczypospolitej Polskiej mo\u017ce by\u0107 ograniczona w ca\u0142o\u015bci lub cz\u0119\u015bci.<\/p>\n<p>\u00a0<\/p>\n<p>3. Serwis Player.pl dost\u0119pny jest wy\u0142\u0105cznie na Platformach Sprz\u0119towych wskazanych w Regulaminie Player.pl.<\/p>\n<p>\u00a0<\/p>\n<p style=\"text-align:center;\"><strong>\u00a7 5. <\/strong><strong>Warunki szczeg\u00f3lne korzystania z Us\u0142ug Odp\u0142atnych w Serwisie Player.pl<\/strong><\/p>\n<p>\u00a0<\/p>\n<p>1. U\u017cytkownik Player.pl mo\u017ce korzysta\u0107 z Us\u0142ugi Odp\u0142atnej na nie wi\u0119cej ni\u017c dw\u00f3ch urz\u0105dzeniach jednocze\u015bnie.<\/p>\n<p>\u00a0<\/p>\n<p>2. U\u017cytkownik Player.pl jest uprawniony do zarejestrowania maksymalnie 5 urz\u0105dze\u0144 przeznaczonych do korzystania z Us\u0142ugi Odp\u0142atnej.<\/p>\n<p>\u00a0<\/p>\n<p>3. Rejestracja urz\u0105dze\u0144, o kt\u00f3rych mowa w ust. 2 powy\u017cej, mo\u017ce by\u0107 dowolnie zmieniana przez U\u017cytkownika Player.pl.<\/p>\n<p>\u00a0<\/p>\n<p>4. Korzystanie przez U\u017cytkownika Player.pl z Us\u0142ugi Odp\u0142atnej na urz\u0105dzeniach niezarejestrowanych na Koncie, lub jednoczesne korzystanie z Us\u0142ugi Odp\u0142atnej na wi\u0119kszej liczbie urz\u0105dze\u0144 ni\u017c dwa w przypadku materia\u0142\u00f3w wideo i wi\u0119cej ni\u017c jedno urz\u0105dzenie w przypadku streamingu kana\u0142\u00f3w na \u017cywo stanowi naruszenie Regulaminu Player.pl.<\/p>\n<p>\u00a0<\/p>\n<p>Dost\u0119p U\u017cytkownika Player.pl do Us\u0142ug Odp\u0142atnych mo\u017ce nie by\u0107 mo\u017cliwy na ka\u017cdej z Platform Sprz\u0119towych jednocze\u015bnie. <del cite=\"mailto:Dzia%C5%82%20Prawny\"><\/del><\/p>\n<p>5. Tabela dost\u0119pno\u015bci Serwisu Player.pl udost\u0119pniana jest U\u017cytkownikom Player.pl przed zawarciem Umowy dotycz\u0105cej wybranej przez U\u017cytkownika Us\u0142ugi Odp\u0142atnej.<\/p>\n<p>\u00a0<\/p>\n<p>6. U\u017cytkownik Player.pl mo\u017ce rozpocz\u0105\u0107 korzystanie z Us\u0142ugi Odp\u0142atnej, kt\u00f3rej dotyczy Umowa, z chwil\u0105:<\/p>\n<p>\u00a0<\/p>\n<p>1)\u00a0\u00a0\u00a0\u00a0\u00a0 Zaakceptowania Regulaminu Player.pl, oraz<\/p>\n<p>2)\u00a0\u00a0\u00a0\u00a0\u00a0 Przy p\u0142atno\u015bciach on-line: pozytywnego zweryfikowania przez Operatora P\u0142atno\u015bci uiszczenia przez U\u017cytkownika Player.pl Ceny za Us\u0142ug\u0119, kt\u00f3rej dotyczy Umowa;<\/p>\n<p>\u00a0<\/p>\n<p>3)\u00a0\u00a0\u00a0\u00a0\u00a0 Przy p\u0142atno\u015bciach SMS Premium: wprowadzenia przez U\u017cytkownika Player.pl Kodu Dost\u0119pu w odpowiednim oknie dialogowym Serwisu Player.pl przy Us\u0142udze, kt\u00f3rej dotyczy Umowa.<\/p>\n<p>\u00a0<\/p>\n<p>7. Kod Dost\u0119pu powinien zosta\u0107 wprowadzony przez U\u017cytkownika Player.pl w odpowiednim oknie dialogowym Serwisu Player.pl przy Us\u0142udze, kt\u00f3rej dotyczy Umowa nie p\u00f3\u017aniej ni\u017c w terminie 30 dni od otrzymania przez U\u017cytkownika Player.pl Kodu Dost\u0119pu.<\/p>\n<p>\u00a0<\/p>\n<p>8. Po up\u0142ywie czasu, o kt\u00f3rym mowa w ust.5 powy\u017cej, Kod Dost\u0119pu traci wa\u017cno\u015b\u0107.<\/p>\n<p>\u00a0<\/p>\n<p>9. Kod Dost\u0119pu mo\u017ce by\u0107 u\u017cyty tylko jeden raz. Po jego u\u017cyciu, Kod Dost\u0119pu traci wa\u017cno\u015b\u0107.<\/p>\n<p>\u00a0<\/p>\n<p style=\"text-align:center;\"><strong>\u00a7 6. <\/strong><strong>Warunki techniczne<\/strong><\/p>\n<p>\u00a0<\/p>\n<p>Techniczne warunki korzystania z Serwisu, maj\u0105 znaczenie dla jego prawid\u0142owego funkcjonowania, a tak\u017ce dla bezpiecze\u0144stwa Danych przechowywanych na Koncie w Serwisie.<\/p>\n<p>\u00a0<\/p>\n<p>1. Dost\u0119p i korzystanie z Serwisu Player.pl mo\u017cliwe jest dla U\u017cytkownika korzystaj\u0105cego z komputera:<\/p>\n<p>\u00a0<\/p>\n<p>1)\u00a0\u00a0\u00a0\u00a0\u00a0 zaopatrzonego w jeden z nast\u0119puj\u0105cych system\u00f3w operacyjnych:<\/p>\n<p>\u00a0<\/p>\n<p>a)\u00a0\u00a0\u00a0\u00a0\u00a0 MS Windows XP<\/p>\n<p>b)\u00a0\u00a0\u00a0\u00a0\u00a0 MS Windows Vista<\/p>\n<p>c)\u00a0\u00a0\u00a0\u00a0\u00a0 MS Windows 7<\/p>\n<p>d)\u00a0\u00a0\u00a0\u00a0\u00a0 Mac OS 10.X<\/p>\n<p>e)\u00a0\u00a0\u00a0\u00a0\u00a0 MS Windows 8<\/p>\n<p>\u00a0<\/p>\n<p>lub ich nowszych wersjach,<\/p>\n<p>\u00a0<\/p>\n<p>2)\u00a0\u00a0\u00a0\u00a0\u00a0 z zainstalowan\u0105 jedn\u0105 z poni\u017cszych przegl\u0105darek z w\u0142\u0105czon\u0105 obs\u0142uga plik\u00f3w \u201ecookies\u201d oraz JavaScript:<\/p>\n<p>\u00a0<\/p>\n<p>a)\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Microsoft Internet Explorer 8.0 lub nowszej wersji<\/p>\n<p>b)\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Mozilla\u00a0 Firefox w wersji 17.0.9 lub nowszej wersji<\/p>\n<p>c)\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Opera 15 lub nowszej wersji<\/p>\n<p>d)\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Google Chrome 30 lub nowszej wersji<\/p>\n<p>e)\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Apple Safari 5.1 lub nowszej wersji<\/p>\n<p>\u00a0<\/p>\n<p>3)\u00a0\u00a0\u00a0\u00a0\u00a0 oraz z nast\u0119puj\u0105cymi wtyczkami zainstalowanymi w jednej z powy\u017cszych przegl\u0105darek:<\/p>\n<p>\u00a0<\/p>\n<p>a)\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 MS Silverlight w wersji 5.0 lub jego nowszej wersji<\/p>\n<p>b)\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Adobe Flash Player 10.X lub jego nowszej wersji<\/p>\n<p>\u00a0<\/p>\n<p>2. Ponadto, dla poprawnego korzystania z Us\u0142ug VoD niezb\u0119dne jest posiadanie nast\u0119puj\u0105cego oprogramowania:<\/p>\n<p>\u00a0<\/p>\n<p>1)\u00a0\u00a0\u00a0\u00a0\u00a0 Windows Media Player w wersji 9 lub nowszej;<\/p>\n<p>2)\u00a0\u00a0\u00a0\u00a0\u00a0 Adobe Flash Player w wersji 9 lub nowszej.<\/p>\n<p><strong> <\/strong><\/p>\n<p>3. Dost\u0119p i korzystanie z Serwisu Player.pl mo\u017cliwe jest dla U\u017cytkownika poprzez Aplikacj\u0119 Mobiln\u0105 na urz\u0105dzeniach przeno\u015bnych:<\/p>\n<p>\u00a0<\/p>\n<p>1)\u00a0\u00a0\u00a0\u00a0\u00a0 zaopatrzonych w jeden z nast\u0119puj\u0105cych system\u00f3w operacyjnych:<\/p>\n<p>\u00a0<\/p>\n<p>a)\u00a0\u00a0\u00a0\u00a0\u00a0 Android 2.2 lub jego nowszych wersjach;<\/p>\n<p>b)\u00a0\u00a0\u00a0\u00a0\u00a0 iOS 5 lub jego nowszych wersjach;<\/p>\n<p>c)\u00a0\u00a0\u00a0\u00a0\u00a0 Windows Phone 7.5 lub jego nowszych wersjach.<\/p>\n<p>\u00a0<\/p>\n<p>2)\u00a0\u00a0\u00a0\u00a0\u00a0 z zainstalowan\u0105 Aplikacj\u0105 Mobiln\u0105.<\/p>\n<p>\u00a0<\/p>\n<p>4. Korzystanie z Serwisu Player.pl na Platformach Sprz\u0119towych wymaga dost\u0119pu do dowolnego typu po\u0142\u0105czenia z internetem, o przepustowo\u015bci co najmniej 512 kilobit\u00f3w\/sekund\u0119.<\/p>\n<p>\u00a0<\/p>\n<p>5. W przypadku Us\u0142ug Odp\u0142atnych, dla skorzystania z SMS Premium przez U\u017cytkownika Player.pl niezb\u0119dne jest tak\u017ce posiadanie urz\u0105dzenia przeno\u015bnego komunikuj\u0105cego si\u0119 w ruchomych sieciach telekomunikacyjnych z mo\u017cliwo\u015bci\u0105 wysy\u0142ania i odbierania wiadomo\u015bci tekstowych\u00a0 oraz w\u0142\u0105czona obs\u0142ug\u0105 SMS Premium.<\/p>\n<p>\u00a0<\/p>\n<p>6. Aktualne informacje dotycz\u0105ce wymaga\u0144 technicznych s\u0105 dost\u0119pne na stronie:<br \/><a href=\"http:\/\/tvnplayer.pl\/faq\/jakie-warunki-musze-spelnic-aby-korzystac-z-serwisu,108.html\">http:\/\/player.pl\/faq\/jakie-warunki-musze-spelnic-aby-korzystac-z-serwisu,108.html<\/a>.<\/p>\n<p>\u00a0<\/p>\n<p>7. W celu sprawdzenia dost\u0119pno\u015bci Serwisu Player.pl dla urz\u0105dzenia, z kt\u00f3rego korzysta U\u017cytkownik, prosimy o zapoznanie si\u0119 z tabel\u0105 dost\u0119pno\u015bci Serwisu Player.pl na Platformy Sprz\u0119towe.<\/p>\n<p>\u00a0<\/p>\n<p>8. Tabela dost\u0119pno\u015bci Serwisu Player.pl udost\u0119pniana jest U\u017cytkownikom Player.pl<ins cite=\"mailto:Dzia%C5%82%20Prawny\"> <\/ins>przed zawarciem Umowy dotycz\u0105cej wybranej przez U\u017cytkownika Us\u0142ugi Odp\u0142atnej ;<\/p>\n<p>\u00a0<\/p>\n<p>9. Korzystanie z Serwisu Player.pl za pomoc\u0105 Aplikacji Mobilnej mo\u017ce podlega\u0107 dodatkowym warunkom wynikaj\u0105cym z regulamin\u00f3w i um\u00f3w dotycz\u0105cych korzystania \u00a0tych Platform Sprz\u0119towych , wydanych przez dostawc\u00f3w tych Platform Sprz\u0119towych.<\/p>\n<p>\u00a0<\/p>\n<p>10. Administrator informuje, \u017ce za transmisj\u0119 danych obejmuj\u0105cych pobieranie Aplikacji Mobilnej oraz korzystanie z Serwisu Player.pl za pomoc\u0105 Aplikacji Mobilnej mo\u017ce zosta\u0107 naliczona op\u0142ata zgodna z cennikiem operatora GSM, kt\u00f3ry \u015bwiadczy us\u0142ugi telekomunikacyjne dla danego U\u017cytkownika Player.pl.<\/p>\n<p>\u00a0<\/p>\n<p style=\"text-align:center;\"><strong>\u00a7 7. <\/strong><strong>Zakres i warunki og\u00f3lne Us\u0142ugi VoD.<\/strong><\/p>\n<p><strong> <\/strong><\/p>\n<p>1. Korzystanie z Us\u0142ugi VoD dopuszczalne jest wy\u0142\u0105cznie dla cel\u00f3w prywatnych i nie s\u0142u\u017c\u0105cych dzia\u0142alno\u015bci zarobkowej.<\/p>\n<p><strong> <\/strong><\/p>\n<p>2. Us\u0142uga VoD mo\u017ce by\u0107 \u015bwiadczona jako Us\u0142uga Nieodp\u0142atna lub Us\u0142uga Odp\u0142atna zgodnie z Regulaminem.<\/p>\n<p>\u00a0<\/p>\n<p>3. Dost\u0119p do Us\u0142ugi VoD uzyskiwany jest przez U\u017cytkownika przez otwarcie odpowiedniej strony w Serwisie, chyba \u017ce wyra\u017anie zastrze\u017cono inaczej.<\/p>\n<p>\u00a0<\/p>\n<p>4. Us\u0142uga VoD nie umo\u017cliwia kopiowania lub utrwalania Materia\u0142\u00f3w udost\u0119pnionych w ramach Us\u0142ugi VoD.<\/p>\n<p>\u00a0<\/p>\n<p>5. W ramach Serwisu Player.pl, U\u017cytkownik mo\u017ce uzyska\u0107 dost\u0119p do nast\u0119puj\u0105cych Us\u0142ug VoD:<\/p>\n<p>\u00a0<\/p>\n<p>1)\u00a0\u00a0\u00a0\u00a0\u00a0 Us\u0142uga \u201ePojedynczy Materia\u0142\u201d - dost\u0119p do wielokrotnej i nieograniczonej ilo\u015bci odtworzenia jednego Materia\u0142u wskazanego w Serwisie Player.pl, jako pojedynczy Materia\u0142. Dost\u0119p jest przyznawany na Czas Dost\u0119pu, ka\u017cdorazowo wyra\u017anie opisany w Serwisie Player.pl i obliczany od chwili zawarcia Umowy z U\u017cytkownikiem Serwisu Player.pl dotycz\u0105cej \u201ePojedynczego Materia\u0142u\u201d.<\/p>\n<p>\u00a0<\/p>\n<p>2)\u00a0\u00a0\u00a0\u00a0\u00a0 Us\u0142uga \"Pakiet\" lub \u201eKolekcja\u201d \u2013 dost\u0119p do wielokrotnego i nieograniczonego ilo\u015bciowo odtworzenia zestawu wielu Materia\u0142\u00f3w dost\u0119pnych w Serwisie Player.pl obj\u0119tych jedn\u0105 Cen\u0105. W ramach Serwisu Player.pl mo\u017ce by\u0107 oferowanych wiele r\u00f3\u017cnych Pakiet\u00f3w, z r\u00f3\u017cn\u0105 zawarto\u015bci\u0105. Dost\u0119p jest przyznawany na Czas Dost\u0119pu, ka\u017cdorazowo opisany w Serwisie Player.pl przez zawarciem Umowy i obliczany od chwili jej zawarcia. W czasie dost\u0119pno\u015bci Us\u0142ugi \u201ePakiet\u201d mog\u0105 nast\u0119powa\u0107 rotacyjne zmiany Materia\u0142\u00f3w lub zmiany ilo\u015bci Materia\u0142\u00f3w w ramach Us\u0142ugi \u201ePakiet\u201d,<\/p>\n<p>\u00a0<\/p>\n<p>3)\u00a0\u00a0\u00a0\u00a0\u00a0 Us\u0142uga \u201eCatch-up\u201d lub \u201eOstatni dzwonek\u201d \u2013 dost\u0119p do jednorazowego lub wielokrotnego odtworzenia jednego Materia\u0142u przez Czas Dost\u0119pu. Po up\u0142ywie podanego w Serwisie Player.pl Czasu Dost\u0119pu, mo\u017ce nast\u0105pi\u0107 zako\u0144czenie udost\u0119pniania danego Materia\u0142u, zmiana jej charakteru lub zmiana zasad jej udost\u0119pniania m.in. poprzez zamian\u0119 Materia\u0142u udost\u0119pnianego w ramach Us\u0142ugi Nieodp\u0142atnej na Materia\u0142 udost\u0119pniany w ramach Us\u0142ugi Odp\u0142atnej lub zmiana Ceny za Materia\u0142 wraz z podaniem tej Ceny.<\/p>\n<p>\u00a0<\/p>\n<p>4)\u00a0\u00a0\u00a0\u00a0\u00a0 inna Us\u0142uga udost\u0119pniana w ramach czasowej promocji w spos\u00f3b i na zasadach okre\u015blonych w Za\u0142\u0105czniku do Regulaminu dotycz\u0105cego tej Us\u0142ugi.<\/p>\n<p>\u00a0<\/p>\n<p>\u00a0<\/p>\n<p>\u00a0<\/p>\n<p style=\"text-align:center;\"><strong>\u00a7 8. <\/strong><strong>Warunki dost\u0119pu do Materia\u0142\u00f3w oznaczonych, jako \u201e18+\u201d<\/strong><\/p>\n<p>\u00a0<\/p>\n<p>1. Ka\u017cdy U\u017cytkownik Player.pl rozpoczynaj\u0105c korzystanie z Us\u0142ugi oznaczonej \u201e18+\u201d, mog\u0105cej zawiera\u0107 \u00a0tre\u015bci przeznaczone wy\u0142\u0105cznie dla os\u00f3b pe\u0142noletnich (tj. maj\u0105cych uko\u0144czone 18 lat), o\u015bwiadcza tym samym, \u017ce ma uko\u0144czone 18 lat,\u00a0 zapozna\u0142 si\u0119 z tre\u015bci\u0105 ostrze\u017cenia zamieszczonego na stronach oznaczonych \u201e18+\u201d dotycz\u0105cych mo\u017cliwo\u015bci kontaktu z tre\u015bciami przeznaczonymi wy\u0142\u0105cznie dla os\u00f3b pe\u0142noletnich (w szczeg\u00f3lno\u015bci tre\u015bciami o charakterze drastycznym, wulgarnym czy pokazuj\u0105cym przemoc) i akceptuje, \u017ce korzystanie ze stron zawieraj\u0105cych tre\u015bci dla os\u00f3b pe\u0142noletnich dopuszczalne jest wy\u0142\u0105cznie dla os\u00f3b, kt\u00f3re uko\u0144czy\u0142y 18 lat, kt\u00f3re czyni\u0105 to na w\u0142asn\u0105 odpowiedzialno\u015b\u0107 i ryzyko.<\/p>\n<p>\u00a0<\/p>\n<p>2. Materia\u0142y oznaczone jako \u201e18+\u201d s\u0105 dost\u0119pne tylko dla U\u017cytkownika Player.pl, kt\u00f3ry dokona\u0142 Rejestracji i potwierdzi\u0142 swoj\u0105 pe\u0142noletnio\u015b\u0107.<\/p>\n<p>\u00a0<\/p>\n<p>3. Potwierdzenie pe\u0142noletnio\u015bci U\u017cytkownika Player.pl nast\u0119puje przez uiszczenie Ceny za Us\u0142ug\u0119 przy u\u017cyciu \u00a0p\u0142atno\u015bci online.<\/p>\n<p>\u00a0<\/p>\n<p>4. U\u017cytkownik Player.pl, p\u0142ac\u0105c za dowoln\u0105 Us\u0142ug\u0119 \u015bwiadczon\u0105 w Serwisie Player.pl, w spos\u00f3b okre\u015blony w ust. 3, mo\u017ce skorzysta\u0107 z opcji potwierdzenia pe\u0142noletnio\u015bci. Korzystaj\u0105c z opcji potwierdzenia pe\u0142noletnio\u015bci U\u017cytkownik Player.pl upowa\u017cnia Administratora do weryfikacji pe\u0142noletnio\u015bci\u00a0 i wyra\u017ca zgod\u0119 na przechowywanie, przetwarzanie i korzystanie z tej informacji przez Administratora w ramach Serwisu, w celu korzystania z Materia\u0142\u00f3w oznaczonych jako \u201e18+\u201d.<\/p>\n<p>\u00a0<\/p>\n<p>5. Po potwierdzeniu pe\u0142noletnio\u015bci U\u017cytkownika Player.pl, Administrator przesy\u0142a na adres poczty elektronicznej U\u017cytkownika Player.pl, indywidualne Has\u0142o umo\u017cliwiaj\u0105ce autoryzowany dost\u0119p U\u017cytkownika do Materia\u0142\u00f3w oznaczonych jako \u201e18+\u201d.<\/p>\n<p>\u00a0<\/p>\n<p>6. Pe\u0142na aktywacja Has\u0142a, o kt\u00f3rym mowa w ust. 5, wymaga akceptacji linku przes\u0142anego wraz z Has\u0142em, co oznacza wyra\u017ane potwierdzenia przez U\u017cytkownika Player.pl, \u017ce zapozna\u0142 si\u0119 z zasadami udost\u0119pniania Materia\u0142\u00f3w oznaczonych jako \u201e18+\u201d oraz, \u017ce nie b\u0119dzie udost\u0119pnia\u0142 Has\u0142a, o kt\u00f3rym mowa w ust. 5, ani Materia\u0142\u00f3w oznaczonych jako \u201e18+\u201d, osobom do tego nieuprawnionym.<\/p>\n<p>\u00a0<\/p>\n<p style=\"text-align:center;\"><strong>\u00a7 9. <\/strong><strong>Obowi\u0105zki U\u017cytkownik\u00f3w Player.pl i ograniczenia dotycz\u0105ce korzystania z Serwisu Player.pl<\/strong><\/p>\n<p>\u00a0<\/p>\n<p>1. Niezale\u017cnie od uprawnie\u0144 wynikaj\u0105cych z Regulaminu, Administrator ma prawo do zablokowania dost\u0119pu do Serwisu Player.pl U\u017cytkownikowi Player.pl, kt\u00f3ry:<\/p>\n<p>\u00a0<\/p>\n<p>1)\u00a0\u00a0\u00a0\u00a0\u00a0 wykorzystuje Serwis Player.pl do cel\u00f3w niezgodnych z jej przeznaczeniem lub na szkod\u0119 os\u00f3b trzecich;<\/p>\n<p>2)\u00a0\u00a0\u00a0\u00a0\u00a0 utrudnia innym U\u017cytkownikom Player.pl korzystanie z Serwisu Player.pl, w tym przez ingerencj\u0119 w poszczeg\u00f3lne elementy Serwisu Player.pl;<\/p>\n<p>3)\u00a0\u00a0\u00a0\u00a0\u00a0 podejmuje dzia\u0142ania maj\u0105ce na celu odczytanie Hase\u0142 innych U\u017cytkownik\u00f3w Player.pl, w tym podejmowanie pr\u00f3b nieuprawnionego odgadni\u0119cia Hase\u0142;<\/p>\n<p>4)\u00a0\u00a0\u00a0\u00a0\u00a0 udost\u0119pnia sw\u00f3j Login i Has\u0142o innych U\u017cytkownikom Player.pl lub osobom nieuprawnionym;<\/p>\n<p>5)\u00a0\u00a0\u00a0\u00a0\u00a0 zamieszcza w Serwisie Player.pl skrypty i programy lub pliki, kt\u00f3re mog\u0105 zak\u0142\u00f3ca\u0107 funkcjonowanie Serwisu Player.pl;<\/p>\n<p>6)\u00a0\u00a0\u00a0\u00a0\u00a0 stosuje urz\u0105dzenia lub oprogramowanie umo\u017cliwiaj\u0105ce korzystanie z danej Us\u0142ugi dost\u0119pnej w Serwisie Player.pl osobom nie b\u0119d\u0105cym U\u017cytkownikami tej Us\u0142ugi w Serwisie Player.pl zgodnie z Regulaminem Player.pl;<\/p>\n<p>7)\u00a0\u00a0\u00a0\u00a0\u00a0 narusza postanowienia Regulaminu Player.pl.<\/p>\n<p>\u00a0<\/p>\n<p style=\"text-align:center;\"><strong>\u00a7 10. <\/strong><strong>Prawa autorskie i prawa pokrewne.<\/strong><\/p>\n<p>\u00a0<\/p>\n<p>1. Materia\u0142y i tre\u015bci, b\u0119d\u0105ce przedmiotem Us\u0142ug VoD w Serwisie Player.pl podlegaj\u0105 ochronie prawnej, w szczeg\u00f3lno\u015bci na mocy ustawy o prawie autorskim i prawach pokrewnych, a tak\u017ce przepis\u00f3w o ochronie baz danych.<\/p>\n<p>\u00a0<\/p>\n<p>2. Prawami autorskimi i prawami pokrewnymi do tre\u015bci i Materia\u0142\u00f3w zawartych w Serwisie Player.pl w zakresie funkcjonowania Serwisu Player.pl dysponuje Administrator b\u0105d\u017a inny wskazany w Serwisie Player.pl podmiot trzeci.<\/p>\n<p>\u00a0<\/p>\n<p>3. Utrwalanie, kopiowanie, trwa\u0142e zwielokrotnianie lub jakakolwiek inna forma ingerencji przez U\u017cytkownika w Materia\u0142y dost\u0119pne w ramach Us\u0142ugi VoD, kt\u00f3ra by\u0142aby sprzeczna z prawem lub postanowieniami Regulaminu, jest zabroniona.<\/p>\n<p>\u00a0<\/p>\n<p>\u00a0<\/p>\n<p style=\"text-align:center;\"><strong>\u00a7 11. <\/strong><strong>Reklamacje<\/strong><\/p>\n<p>\u00a0<\/p>\n<p>1. Reklamacje na dzia\u0142anie Serwisu Player.pl oraz poszczeg\u00f3lnych Us\u0142ug mog\u0105 by\u0107 zg\u0142aszane przez U\u017cytkownika do BOK TVN lub na adres poczty elektronicznej <a href=\"mailto:reklamacje.player@tvn.pl\">reklamacje.player@tvn.pl<\/a>.<\/p>\n<p><strong> <\/strong><\/p>\n<p style=\"text-align:center;\"><strong>\u00a7 12. <\/strong><strong>Postanowienia ko\u0144cowe<\/strong><\/p>\n<p><strong> <\/strong><\/p>\n<p>1. Regulamin Player.pl wchodzi w \u017cycie z dniem 24.02.2014<\/p>\n<p><strong> <\/strong><\/p>\n<p>2. W wszelkich sprawach nieunormowanych Regulaminem Player.pl, stosuje si\u0119 Regulamin.<\/p>\n"
+        },
+        "devices": [
+            {
+                "id": 1,
+                "name": "WWW",
+                "content": "",
+                "avaliable_video_free": 1,
+                "available_video_payable": 1,
+                "available_stream_internal": 1,
+                "available_stream_external": 1
+            }
+        ]
+    },
+    "status": "success"
+}
