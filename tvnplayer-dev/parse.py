@@ -1,20 +1,23 @@
 import json
 import glob
 import time
-from os.path import getmtime
+from os.path import getmtime, isfile
+
+import config
+import download
 
 
-def run():
+def run(json_dir=config.JSON_DIR):
     """ find latest jsons and get data from them """
-    DIR = "data/json"
-
     # find all json files
-    files = glob.glob('{}/*.json'.format(DIR), recursive=True)
+    files = glob.glob('{}/*.json'.format(json_dir), recursive=True)
     files.sort(key=getmtime, reverse=True)
     result = []
     for filename in files:
-        output = get_data(filename, DIR)
-        if type(output) == tuple:
+        output = get_data(filename, json_dir)
+        if output is None or type(output) == tuple:
+            if output[0] is None:
+                continue
             result.append(output[0])
         else:
             print('[error] Getting data from file {}'.format(filename))
@@ -22,7 +25,7 @@ def run():
     return result
 
 
-def load_raw(asset_id, dir='data/json'):
+def load_raw(asset_id, dir=config.JSON_DIR):
     """ load json file """
     json_filename = "{}/{}.json".format(dir, asset_id)
     try:
@@ -47,21 +50,20 @@ def load_file(json_filename, dir):
 
     if 'status' not in raw.keys():
         return "failed"
-    if raw['status'] == 'success':
-        raw['item']['file_date'] = time.strftime('%Y-%m-%d %H:%M:%S',
-                                                 time.localtime(getmtime(
-                                                     json_filename)))
-        raw['item']['latest'] = find_latest(dir)
-        return raw['item']
+    try:
+        if raw['status'] == 'success':
+            raw['item']['file_date'] = time.strftime('%Y-%m-%d %H:%M:%S',
+                                                     time.localtime(getmtime(
+                                                         json_filename)))
+            raw['item']['latest'] = find_latest(dir)
+            return raw['item']
+    except KeyError:
+        return "failed"
     return raw['status']
 
 
 def get_data(filename, dir):
     """ get keys from dict """
-    KEYS = ('asset_id', 'id', 'start_date', 'serie_title', 'season',
-            'episode', 'thumbnail', 'lead', 'videos', 'file_date',
-            'run_time', 'latest')
-
     data = load_file(filename, dir)
 
     #  not valid - return status
@@ -69,7 +71,7 @@ def get_data(filename, dir):
         return data
 
     output = {}
-    for jkey in KEYS:
+    for jkey in config.JSON_KEYS:
         if jkey in data:
             output[jkey] = data[jkey]
         else:
@@ -93,6 +95,27 @@ def resize_thumbnail(thumbnail):
 web-content/m/{}?srcx=0&type=1&srcmode=1&quality=95&\
 dstw={}&dsth={}""".format(thumb, dstw, dsth)
     return img
+
+
+def check_cache(asset_id, img_link):
+    """ check if file is already downloaded """
+    # TODO: test json files
+
+    result = False
+    local_img = '{}/{}.jpg'.format(config.CACHE_DIR, asset_id)
+    if not isfile(local_img):
+        result = download.get_image(img_link, local_img)
+    if result:
+        return local_img
+    return ''
+
+
+def get_image(asset_id, thumbnail):
+    """ get image for episode """
+    img_link = resize_thumbnail(thumbnail)
+    if img_link is None or len(img_link) == 0:
+        return ''
+    return check_cache(asset_id, img_link)
 
 
 def get_link(data, quality='HD'):
@@ -125,17 +148,21 @@ def create_row(data):
     """ format table row output """
     # asset, title, episode, date, thumb, desc, links
     output = {}
-    output[0] = (data['asset_id'], data['id'])
-    output[1] = data['serie_title']
-    output[2] = "{:02d}".format(data['episode'])
-    output[3] = "{:02d}".format(data['season'])
-    output[4] = (data['start_date'], data['file_date'])
-    output[5] = resize_thumbnail(data['thumbnail'][0])
-    output[6] = get_desc(data['lead'])
-    output[7] = (None, 'N/A')
-    output[8] = (None, 'N/A')
-    output[9] = data['run_time']
-    output[10] = str(data['id']) in str(data['latest'])
+    try:
+        output[0] = (data['asset_id'], data['id'])
+        output[1] = data['serie_title']
+        output[2] = "{:02d}".format(data['episode'])
+        output[3] = "{:02d}".format(data['season'])
+        output[4] = (data['start_date'], data['file_date'])
+        output[5] = get_image(data['id'], data['thumbnail'][0])
+        # output[5] = resize_thumbnail(data['thumbnail'][0])
+        output[6] = get_desc(data['lead'])
+        output[7] = (None, 'N/A')
+        output[8] = (None, 'N/A')
+        output[9] = data['run_time']
+        output[10] = str(data['id']) in str(data['latest'])
+    except ValueError:
+        return None
     # TODO: links
     quality = 'HD'
     remote_link = get_link(data, quality)
