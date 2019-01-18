@@ -1,0 +1,20 @@
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color:  #bb671c;
+}
+.hd {
+    display: block;
+    font-size: 13px;
+}
+.js {
+    display: block;
+    font-size: 15px;
+    /*color:  #bb671c;*/
+    color: #e4ab1e;
+    font-family: monospace;
+}
+.runtime {
+    font-size: 15px;
+    color: #3c2109;
+}

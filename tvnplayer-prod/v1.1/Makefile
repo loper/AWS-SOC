@@ -2,7 +2,10 @@ build:
 	docker build -t player:latest .
 
 run:
-	docker run -d --rm -p 5000:5000 -v ~/Projekty/Acc/tvnplayer-prod/v1.0/data/:/home/player/data/:ro --name p1 player
+	docker run -d --rm -p 5000:5000 -v ~/Projekty/Acc/tvnplayer-prod/v1.1/data/:/home/player/data/:rw --name p1 player
+
+export:
+	docker image save player:latest > player-latest.tar
 
 clear:
 	@find . -type d -name __pycache__ -exec rm -r {} \;
