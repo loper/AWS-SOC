@@ -7,7 +7,7 @@ run:
 export:
 	docker image save player:latest > player-latest.tar
 
-clear:
+clean:
 	find . -type d -name __pycache__ -exec rm -r {} \;
 	find . -type d -name .ropeproject -exec rm -r {} \;
 	find player/static/cache -type f -delete

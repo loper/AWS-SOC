@@ -113,7 +113,7 @@ def check_cache(asset_id, img_link):
     return ''
 
 
-def get_image(asset_id, thumbnail):
+def load_image(asset_id, thumbnail):
     """ get image for episode """
     img_link = resize_thumbnail(thumbnail)
     if img_link is None or len(img_link) == 0:
@@ -157,7 +157,7 @@ def create_row(data):
         output[2] = "{:02d}".format(data['episode'])
         output[3] = "{:02d}".format(data['season'])
         output[4] = (data['start_date'], data['file_date'])
-        output[5] = get_image(data['id'], data['thumbnail'][0])
+        output[5] = load_image(data['id'], data['thumbnail'][0])
         # output[5] = resize_thumbnail(data['thumbnail'][0])
         output[6] = get_desc(data['lead'])
         output[7] = (None, 'N/A')
