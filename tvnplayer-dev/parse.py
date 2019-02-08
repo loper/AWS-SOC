@@ -108,6 +108,8 @@ def check_cache(asset_id, img_link):
     local_img = '{}/{}.jpg'.format(config.CACHE_DIR, asset_id)
     if not isfile(local_img):
         result = get_image(img_link, local_img)
+    else:
+        result = True
     if result:
         return local_img
     return ''

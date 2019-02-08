@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 from flask_bootstrap import Bootstrap
 from flask import jsonify
 from flask import make_response
@@ -37,6 +37,11 @@ def raw(serial):
     response.headers['Content-Type'] = 'application/json'
     return response
 
+# https://stackoverflow.com/questions/9513072/more-than-one-static-path-in-local-flask-instance
+# Custom static data
+@app.route('/data/<path:filename>')
+def custom_static(filename):
+    return send_from_directory('data', filename)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')

@@ -4,6 +4,7 @@ from urllib.request import urlretrieve
 from os import remove
 from os.path import getmtime, isfile, exists
 from os import makedirs
+from time import sleep
 
 import config
 
@@ -33,6 +34,7 @@ def get_image(url, dest):
     result = urlretrieve(url, dest)
     print('[DEBUG] Downloading image {} - {}'.format(result[0], result[1]))
     # TODO: https://stackoverflow.com/questions/21746750/check-and-wait-until-a-file-exists-to-read-it
+    sleep(1)
     return isfile(dest)
 
 def check_dir(directory):
