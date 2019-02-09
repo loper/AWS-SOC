@@ -1,8 +1,8 @@
 build:
-	docker build -t player:latest .
+	docker build -t player:1.3 .
 
 run:
-	docker run -d --rm -p 5000:5000 -v ~/Projekty/Acc/tvnplayer-prod/v1.2/data/:/home/player/data/:rw --name p1 player
+	docker run -d --rm -p 5000:5000 -v ~/Projekty/Acc/tvnplayer-prod/v1.3/data/:/home/player/data/:rw --name p1 player:1.3
 
 export:
 	docker image save player:latest > player-latest.tar

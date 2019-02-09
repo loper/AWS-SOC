@@ -12,4 +12,5 @@ clean:
 	find . -type d -name .ropeproject -exec rm -r {} \;
 	find player/static/cache -type f -delete
 	find player/data -type f -iname \*.json -delete
+	find player/data -type f -iname \*.jpg -delete
 
