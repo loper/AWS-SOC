@@ -5,7 +5,7 @@ run:
 	docker run -d --rm -p 5000:5000 -v ~/Projekty/Acc/tvnplayer-prod/v1.3/data/:/home/player/data/:rw --name p1 player:1.3
 
 export:
-	docker image save player:latest > player-latest.tar
+	docker image save player:1.3 > player-latest.tar
 
 clean:
 	find . -type d -name __pycache__ -exec rm -r {} \;
