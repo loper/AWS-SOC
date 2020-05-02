@@ -16,8 +16,10 @@ th > a {
 }
 td, th {
     padding: 2px;
-    /* text-align: center; */
     vertical-align: middle;
+}
+tr.bg-card {
+    background-color: #dffbf1;
 }
 td {
     text-align: left;
@@ -45,6 +47,9 @@ div.hs.error {
 }
 div.hs.danger {
     background-image: url('/static/gfx/dan.png'); 
+}
+div.hs.na {
+    background-image: url('/static/gfx/na.png'); 
 }
 div.status {
     margin: auto;
@@ -80,4 +85,34 @@ div.card {
 	align-items: center;
     margin-top: auto;
     margin-bottom: auto;
+}
+div.header {
+    /*background-color: #fff4ea;*/
+    width: 1320px;
+    height: 250px;
+    margin: 0px auto;
+}
+div.logo {
+    float: left;
+    width: 646px;
+    height: 250px;
+    background-image: url(/static/gfx/Cyber-Security-PNG-Picture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.title {
+    float: right;
+    width: 646px;
+    height: 250px;
+    color: #0b9f4d;    
+}
+p.h2 {
+    margin-top: 90px;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #9abfa6;
+}
+p.h3 {
+    font-weight: bold;
+    text-decoration: overline;
 }

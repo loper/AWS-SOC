@@ -18,9 +18,6 @@ def mainpage(sort='name', vuln=False):
     # host details
     hosts_data = get_hosts(sort, vuln)
 
-    # tools data
-    # check_tools(hosts_data)
-
     # QIDs
     qid_list = get_found_qids(hosts_data)
     qid_data = get_qids(qid_list)

@@ -47,6 +47,8 @@ def get_qids(id_list=None):
 
 
 def get_status(tools_statuses):
+    if 'N/A' in tools_statuses:
+        return 'na'
     if not True in tools_statuses:
         return 'error'
     if False in tools_statuses:
@@ -56,29 +58,30 @@ def get_status(tools_statuses):
 
 def add_fake_data(data):
     f = faker.Faker(['en'])
-    # data['tanium'] = choice([True, False], p=[0.9, 0.1])
-    # data['qualys'] = choice([True, False], p=[0.9, 0.1])
-    # data['splunk'] = choice([True, False], p=[0.8, 0.2])
-    data['tanium'] = True
-    data['qualys'] = True
-    data['splunk'] = True
+    if not 'tanium' in data:
+        data['tanium'] = choice([True, False], p=[0.9, 0.1])
+        data['qualys'] = choice([True, False], p=[0.9, 0.1])
+        data['splunk'] = choice([True, False], p=[0.8, 0.2])
 
-    data['name'] = f.sentence()
+        data['name'] = f.sentence()
+        if [data['tanium'], data['qualys'], data['splunk']].count(False) > 0:
+            data['qid'] = choice([372508, 91622, 100403, 99999])
 
-    if [data['tanium'], data['qualys'], data['splunk']].count(False) == 2:
-        data['tanium'] = False
-        data['qualys'] = False
-        data['splunk'] = False
-
-    data['last check'] = datetime.strftime(
-        f.date_time_this_year(), '%Y-%m-%d %H:%M:%S')
+        if [data['tanium'], data['qualys'], data['splunk']].count(False) == 2:
+            data['tanium'] = False
+            data['qualys'] = False
+            data['splunk'] = False
+    if not 'last check' in data:
+        data['last check'] = datetime.strftime(
+            f.date_time_this_year(), '%Y-%m-%d %H:%M:%S')
 
 
 def set_qid(data):
-    # DEBUG XXX
-    if [data['tanium'], data['qualys'], data['splunk']].count(False) > 0:
-        data['qid'] = choice([372508, 91622, 100403, 99999])
-    else:
+    # fix missing data
+    if not 'qid' in data:
+        data['qid'] = 0
+    # clear out if all valid
+    elif [data['tanium'], data['qualys'], data['splunk']].count(False) == 0:
         data['qid'] = 0
 
 
@@ -90,14 +93,12 @@ def sort_by(data, attr):
         if not data:
             # empty set
             return data
-        if attr in data[0].keys():
-            data = sorted(data, key=itemgetter(attr), reverse=rev)
-        else:
+        if not attr in data[0].keys():
             print('[ERROR] sorting failure: {} not in keys'.format(attr))
             raise KeyError
     except KeyError as err:
         attr = 'name'
-        data = sorted(data, key=itemgetter(attr), reverse=rev)
+    data = sorted(data, key=itemgetter(attr), reverse=rev)
     return data
 
 
@@ -114,14 +115,24 @@ def get_hosts(sort_attr=None, only_vuln=False):
     result = []
     for host in hosts:
         data = read_json(host)
-        add_fake_data(data)  # DEBUG XXX
         # check tools data
-        check_tools(data)
+        tools_found = check_tools(data)
+        if not tools_found:
+            # skip - tools status not found
+        #    continue
+            data['tanium'] = 'N/A'
+            data['qualys'] = 'N/A'
+            data['splunk'] = 'N/A'
+        # set overall status
         data['status'] = get_status(
             [data['tanium'], data['qualys'], data['splunk']])
+        # filter out
         if only_vuln and data['status'] == 'ok':
             continue
+        # find QID for host
         set_qid(data)
+        # fake data
+        add_fake_data(data)  # DEBUG XXX
         result.append(data)
 
     # sort
@@ -133,15 +144,15 @@ def check_tools(host):
     # find json
     tools = find_tools(host['ip'])
     if not tools:
-        return
+        return False
     # get tools info
     data = read_json(tools)
     # verify file
     if not 'ip' in data.keys() or data['ip'] != host['ip']:
-        return
-    print(data)
-    host_data = set_sec_tools_status(host, data)
-    # XXX hosts[host] = host_data
+        return False
+    # set data from tools status
+    set_sec_tools_status(host, data)
+    return True
 
 
 def set_sec_tools_status(host_data, t):
@@ -151,7 +162,8 @@ def set_sec_tools_status(host_data, t):
         host_data['qualys'] = t['qualys']
     if 'splunk' in t:
         host_data['splunk'] = t['splunk']
-    return host_data
+    if 'qid' in t:
+        host_data['qid'] = t['qid']
 
 
 if __name__ == '__main__':
