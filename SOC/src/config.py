@@ -6,6 +6,7 @@ HOSTS_DIR = '{}/hosts'.format(DATA_DIR)
 DATABASE_DIR = '{}/database'.format(DATA_DIR)
 HOST_FILENAME = 'host.json'
 QID_FILENAME = 'qid.json'
+TOOLS_FILENAME = 'tools.json'
 
 
 HEADER = ["status", "name", "ip", "os", "tanium", "qualys", "splunk", "last check", "qid"]

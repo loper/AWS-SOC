@@ -2,12 +2,15 @@ from json import dump, load, JSONDecodeError
 
 from config import DATABASE_DIR, QID_FILENAME
 from config import HOSTS_DIR, HOST_FILENAME
+from config import TOOLS_FILENAME
+
 from pathlib import Path
 
 import faker
 from _datetime import datetime
 from numpy.random import choice
 from operator import itemgetter
+from os.path import exists
 
 
 def read_json(filename):
@@ -23,6 +26,13 @@ def read_json(filename):
 
 def find_hosts():
     return Path(HOSTS_DIR).glob('**/{}'.format(HOST_FILENAME))
+
+
+def find_tools(host):
+    tool_file = '{}/{}/{}'.format(HOSTS_DIR, host, TOOLS_FILENAME)
+    if exists(tool_file):
+        return tool_file
+    return None
 
 
 def get_qids(id_list=None):
@@ -46,9 +56,12 @@ def get_status(tools_statuses):
 
 def add_fake_data(data):
     f = faker.Faker(['en'])
-    data['tanium'] = choice([True, False], p=[0.9, 0.1])
-    data['qualys'] = choice([True, False], p=[0.9, 0.1])
-    data['splunk'] = choice([True, False], p=[0.8, 0.2])
+    # data['tanium'] = choice([True, False], p=[0.9, 0.1])
+    # data['qualys'] = choice([True, False], p=[0.9, 0.1])
+    # data['splunk'] = choice([True, False], p=[0.8, 0.2])
+    data['tanium'] = True
+    data['qualys'] = True
+    data['splunk'] = True
 
     data['name'] = f.sentence()
 
@@ -74,6 +87,9 @@ def sort_by(data, attr):
         rev = False
         if attr == 'qid':
             rev = True
+        if not data:
+            # empty set
+            return data
         if attr in data[0].keys():
             data = sorted(data, key=itemgetter(attr), reverse=rev)
         else:
@@ -99,6 +115,8 @@ def get_hosts(sort_attr=None, only_vuln=False):
     for host in hosts:
         data = read_json(host)
         add_fake_data(data)  # DEBUG XXX
+        # check tools data
+        check_tools(data)
         data['status'] = get_status(
             [data['tanium'], data['qualys'], data['splunk']])
         if only_vuln and data['status'] == 'ok':
@@ -109,6 +127,31 @@ def get_hosts(sort_attr=None, only_vuln=False):
     # sort
     result = sort_by(result, sort_attr)
     return result
+
+
+def check_tools(host):
+    # find json
+    tools = find_tools(host['ip'])
+    if not tools:
+        return
+    # get tools info
+    data = read_json(tools)
+    # verify file
+    if not 'ip' in data.keys() or data['ip'] != host['ip']:
+        return
+    print(data)
+    host_data = set_sec_tools_status(host, data)
+    # XXX hosts[host] = host_data
+
+
+def set_sec_tools_status(host_data, t):
+    if 'tanium' in t:
+        host_data['tanium'] = t['tanium']
+    if 'qualys' in t:
+        host_data['qualys'] = t['qualys']
+    if 'splunk' in t:
+        host_data['splunk'] = t['splunk']
+    return host_data
 
 
 if __name__ == '__main__':

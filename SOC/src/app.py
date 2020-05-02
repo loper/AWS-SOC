@@ -1,8 +1,7 @@
 from flask import Flask, render_template, url_for
 from flask_bootstrap import Bootstrap
 
-import database
-
+from database import get_found_qids, get_hosts, get_qids
 from config import HEADER, Q_HEADER
 
 APP = Flask(__name__)
@@ -17,11 +16,14 @@ def mainpage(sort='name', vuln=False):
     # index
 
     # host details
-    hosts_data = database.get_hosts(sort, vuln)
+    hosts_data = get_hosts(sort, vuln)
+
+    # tools data
+    # check_tools(hosts_data)
 
     # QIDs
-    qid_list = database.get_found_qids(hosts_data)
-    qid_data = database.get_qids(qid_list)
+    qid_list = get_found_qids(hosts_data)
+    qid_data = get_qids(qid_list)
 
     # empty set
     if not hosts_data:
