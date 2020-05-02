@@ -1,8 +1,9 @@
-import boto3
-import re
 import os
+
 from datetime import datetime
 from json import dump
+
+import boto3
 
 from config import HOSTS_DIR, HOST_FILENAME
 
@@ -19,10 +20,10 @@ def save_host_data(data, dirname):
     return True
 
 
-ec2 = boto3.client('ec2')
-responses = ec2.describe_instances()['Reservations']
+EC2 = boto3.client('ec2')
+RESPONSES = EC2.describe_instances()['Reservations']
 
-for nr, response in enumerate(responses):
+for nr, response in enumerate(RESPONSES):
     new_host = {}
     inst = response['Instances'][0]
     tags = inst['Tags']

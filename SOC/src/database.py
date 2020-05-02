@@ -1,18 +1,13 @@
-from json import dump, load, JSONDecodeError
-from os import stat
+from json import load, JSONDecodeError
 from time import strftime, localtime
+from pathlib import Path
+from operator import itemgetter
+from os import stat
+from os.path import exists
 
 from config import DATABASE_DIR, QID_FILENAME
 from config import HOSTS_DIR, HOST_FILENAME
 from config import TOOLS_FILENAME
-
-from pathlib import Path
-
-import faker
-from _datetime import datetime
-from numpy.random import choice
-from operator import itemgetter
-from os.path import exists
 
 
 def read_json(filename):
@@ -55,6 +50,7 @@ def get_qids2(id_list, hosts_data):
             result.append(combinded)
     return result
 
+
 def get_qids(id_list, hosts_data):
     if not id_list:
         return None
@@ -77,10 +73,10 @@ def get_status(tools_statuses):
     if 'N/A' in tools_statuses:
         return 'zero'
     # all tools are invalid - FATAL
-    elif not True in tools_statuses:
+    if not True in tools_statuses:
         return 'error'
     # one of tools are invalid - WARNING
-    elif False in tools_statuses:
+    if False in tools_statuses:
         return 'danger'
     # everything is good - OK
     return 'ok'
@@ -106,7 +102,7 @@ def sort_by(data, attr):
         if not attr in data[0].keys():
             print('[ERROR] sorting failure: {} not in keys'.format(attr))
             raise KeyError
-    except KeyError as err:
+    except KeyError:
         attr = 'name'
     data = sorted(data, key=itemgetter(attr), reverse=rev)
     return data
@@ -170,25 +166,25 @@ def check_tools(host):
     return True
 
 
-def set_sec_tools_status(host_data, t):
-    if 'tanium' in t:
-        host_data['tanium'] = t['tanium']
-    if 'qualys' in t:
-        host_data['qualys'] = t['qualys']
-    if 'splunk' in t:
-        host_data['splunk'] = t['splunk']
-    if 'qid' in t:
-        host_data['qid'] = t['qid']
+def set_sec_tools_status(host_data, data):
+    if 'tanium' in data:
+        host_data['tanium'] = data['tanium']
+    if 'qualys' in data:
+        host_data['qualys'] = data['qualys']
+    if 'splunk' in data:
+        host_data['splunk'] = data['splunk']
+    if 'qid' in data:
+        host_data['qid'] = data['qid']
 
 
 if __name__ == '__main__':
     # print(get_hosts())
     # host details
-    hosts_data = get_hosts()
+    HOSTS_DATA = get_hosts()
 
     # QIDs
-    qid_list = get_found_qids(hosts_data)
-    qids = get_qids(qid_list, hosts_data)
-    print(qids)
+    QID_LIST = get_found_qids(HOSTS_DATA)
+    QIDS = get_qids(QID_LIST, HOSTS_DATA)
+    print(QIDS)
 
-    print(get_host_by_qid(91622, hosts_data))
+    print(get_host_by_qid(91622, HOSTS_DATA))
