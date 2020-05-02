@@ -87,15 +87,14 @@ div.card {
     margin-bottom: auto;
 }
 div.header {
-    /*background-color: #fff4ea;*/
-    width: 1320px;
+    width: 1370px;
     height: 250px;
     margin: 0px auto;
 }
 div.logo {
     float: left;
-    width: 646px;
-    height: 250px;
+    width: 720px;
+    height: 270px;
     background-image: url(/static/gfx/Cyber-Security-PNG-Picture.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,15 +103,17 @@ div.title {
     float: right;
     width: 646px;
     height: 250px;
-    color: #0b9f4d;    
+    color: #0b9f4d;
 }
 p.h2 {
-    margin-top: 90px;
-    font-size: 40px;
+    margin-top: 100px;
+    font-size: 43px;
     font-weight: bold;
     text-shadow: 5px 5px 5px #9abfa6;
 }
 p.h3 {
     font-weight: bold;
     text-decoration: overline;
+    font-family: monospace;
+    font-size: 22px;
 }
