@@ -20,7 +20,7 @@ def mainpage(sort='name', vuln=False):
 
     # QIDs
     qid_list = get_found_qids(hosts_data)
-    qid_data = get_qids(qid_list)
+    qid_data = get_qids(qid_list, hosts_data)
 
     # empty set
     if not hosts_data:

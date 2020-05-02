@@ -37,14 +37,38 @@ def find_tools(host):
     return None
 
 
-def get_qids(id_list=None):
+def get_host_by_qid(qid, hosts_data):
+    for host in hosts_data:
+        if str(host['qid']) == str(qid):
+            return host['ip']
+    return 'N/A'
+
+
+def get_qids2(id_list, hosts_data):
     data = read_json('{}/{}'.format(DATABASE_DIR, QID_FILENAME))
     result = []
     for qid in data.keys():
         if not id_list or str(qid) in id_list:
             combinded = data[qid]
-            combinded.update({'qid': qid})
+            host = get_host_by_qid(qid, hosts_data)
+            combinded.update({'qid': qid, 'host': host})
             result.append(combinded)
+    return result
+
+def get_qids(id_list, hosts_data):
+    if not id_list:
+        return None
+    data = read_json('{}/{}'.format(DATABASE_DIR, QID_FILENAME))
+    result = []
+    for host in hosts_data:
+        if host['qid'] == 0:
+            continue
+        qid = str(host['qid'])
+        if qid not in data.keys():
+            continue
+        combinded = data[qid]
+        combinded.update({'qid': qid, 'host': host['ip']})
+        result.append(combinded)
     return result
 
 
@@ -164,5 +188,7 @@ if __name__ == '__main__':
 
     # QIDs
     qid_list = get_found_qids(hosts_data)
-    qids = get_qids(qid_list)
+    qids = get_qids(qid_list, hosts_data)
     print(qids)
+
+    print(get_host_by_qid(91622, hosts_data))

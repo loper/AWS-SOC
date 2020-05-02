@@ -10,4 +10,4 @@ TOOLS_FILENAME = 'tools.json'
 
 
 HEADER = ["status", "name", "ip", "os", "tanium", "qualys", "splunk", "qid", "last check"]
-Q_HEADER = ["qid", "description", "solution"]
+Q_HEADER = ["host", "qid", "description", "solution"]
