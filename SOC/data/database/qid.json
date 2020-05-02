@@ -10,5 +10,9 @@
     "100403": {
         "description": "Microsoft Internet Explorer Security Update for April 2020",
         "solution": "Update Windows"
+    },
+    "372480": {
+        "description": "Apache Tomcat AJP File Inclusion Vulnerability",
+        "solution": "Update Tomcat"
     }
 }

@@ -6,7 +6,7 @@
     <thead>
     <tr class="bg-card">
         {% for header in headers %}
-            {% if header in ['status', 'tanium', 'qualys', 'splunk'] %}
+            {% if header in ['status', 'tanium', 'qualys', 'splunk', 'last check', 'qid'] %}
                 <th class="center"><a href="/sort={{ header }}">{{ header.upper() }}</a></th>
             {% else %}
                 <th class="left"><a href="/sort={{ header }}">{{ header.upper() }}</a></th>
@@ -28,7 +28,11 @@
                         <td class="center"><div class="status {{ 'green' if item[header] else 'red' }}"></div></td>
                     {% endif %}
                 {% elif header == 'qid' and item[header] == 0 %}
-                    <td>-</td>
+                    <td class="center">-</td>
+                {% elif header in ['last check'] %}
+                    <td class="center">{{ item[header] }}</td>
+                {% elif header == 'qid' %}
+                    <td class="center"><div class="status orange">{{ item[header] }}</div></td>
                 {% else %}
                     <td>{{ item[header] }}</td>
                 {% endif %}

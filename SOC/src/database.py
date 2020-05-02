@@ -1,4 +1,6 @@
 from json import dump, load, JSONDecodeError
+from os import stat
+from time import strftime, localtime
 
 from config import DATABASE_DIR, QID_FILENAME
 from config import HOSTS_DIR, HOST_FILENAME
@@ -47,33 +49,17 @@ def get_qids(id_list=None):
 
 
 def get_status(tools_statuses):
+    # no data found - NEUTRAL
     if 'N/A' in tools_statuses:
-        return 'na'
-    if not True in tools_statuses:
+        return 'zero'
+    # all tools are invalid - FATAL
+    elif not True in tools_statuses:
         return 'error'
-    if False in tools_statuses:
+    # one of tools are invalid - WARNING
+    elif False in tools_statuses:
         return 'danger'
+    # everything is good - OK
     return 'ok'
-
-
-def add_fake_data(data):
-    f = faker.Faker(['en'])
-    if not 'tanium' in data:
-        data['tanium'] = choice([True, False], p=[0.9, 0.1])
-        data['qualys'] = choice([True, False], p=[0.9, 0.1])
-        data['splunk'] = choice([True, False], p=[0.8, 0.2])
-
-        data['name'] = f.sentence()
-        if [data['tanium'], data['qualys'], data['splunk']].count(False) > 0:
-            data['qid'] = choice([372508, 91622, 100403, 99999])
-
-        if [data['tanium'], data['qualys'], data['splunk']].count(False) == 2:
-            data['tanium'] = False
-            data['qualys'] = False
-            data['splunk'] = False
-    if not 'last check' in data:
-        data['last check'] = datetime.strftime(
-            f.date_time_this_year(), '%Y-%m-%d %H:%M:%S')
 
 
 def set_qid(data):
@@ -81,8 +67,8 @@ def set_qid(data):
     if not 'qid' in data:
         data['qid'] = 0
     # clear out if all valid
-    elif [data['tanium'], data['qualys'], data['splunk']].count(False) == 0:
-        data['qid'] = 0
+    # elif [data['tanium'], data['qualys'], data['splunk']].count(False) == 0:
+    #   data['qid'] = 0
 
 
 def sort_by(data, attr):
@@ -118,26 +104,30 @@ def get_hosts(sort_attr=None, only_vuln=False):
         # check tools data
         tools_found = check_tools(data)
         if not tools_found:
-            # skip - tools status not found
-        #    continue
+            # no tools data
             data['tanium'] = 'N/A'
             data['qualys'] = 'N/A'
             data['splunk'] = 'N/A'
+        # fix QID for host
+        set_qid(data)
         # set overall status
         data['status'] = get_status(
-            [data['tanium'], data['qualys'], data['splunk']])
+            [data['tanium'], data['qualys'], data['splunk'],
+             (data['qid'] == 0)])
         # filter out
         if only_vuln and data['status'] == 'ok':
             continue
-        # find QID for host
-        set_qid(data)
-        # fake data
-        add_fake_data(data)  # DEBUG XXX
         result.append(data)
 
     # sort
     result = sort_by(result, sort_attr)
     return result
+
+
+def set_last_change_time(host_data, tools_file):
+    changed = stat(tools_file).st_mtime
+    changed_time = strftime('%Y-%m-%d %H:%M:%S', localtime(changed))
+    host_data['last check'] = changed_time
 
 
 def check_tools(host):
@@ -152,6 +142,7 @@ def check_tools(host):
         return False
     # set data from tools status
     set_sec_tools_status(host, data)
+    set_last_change_time(host, tools)
     return True
 
 

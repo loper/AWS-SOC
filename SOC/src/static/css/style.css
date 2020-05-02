@@ -48,7 +48,7 @@ div.hs.error {
 div.hs.danger {
     background-image: url('/static/gfx/dan.png'); 
 }
-div.hs.na {
+div.hs.zero {
     background-image: url('/static/gfx/na.png'); 
 }
 div.status {
@@ -68,7 +68,7 @@ div.status {
     background-position: -162px -67px;
 }
 .orange {
-    background-position: -243px -67px;
+    background-position: -243px -61px;
 }
 .red {
     background-position: -324px -67px;
