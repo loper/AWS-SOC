@@ -1,4 +1,0 @@
-12872  mkdir data/{json,cache}
-12874  # chown -R loper:1000 data
-12875  # chmod -R g+w data
-12876  docker logs -f p1

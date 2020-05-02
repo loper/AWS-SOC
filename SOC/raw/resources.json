@@ -1,0 +1,27 @@
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "ImageId": "ami-0d88dc236ace30187",
+                    "InstanceId": "i-0d9e5ec16da9cd8e1",
+                    "InstanceType": "t2.nano",
+                    "KeyName": "GKRP",
+                    "LaunchTime": "2019-12-29T13:43:37.000Z",
+                    "PrivateIpAddress": "172.31.62.157",
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "[CM][Linux][Bastion] OVPN London"
+                        },
+                        {
+                            "Key": "OS",
+                            "Value": "LINUX"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

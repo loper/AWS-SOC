@@ -1,0 +1,20 @@
+{% extends "bootstrap/base.html" %}
+
+{% block metas %}
+<meta name="viewport" content="width=device-width, initial-scale=0.7">
+<meta name="author" content="MS <maciej.spychalski@accenture.com>"/>
+{% endblock %}
+
+{% block title %}AWS SOC - Compliance Reports{% endblock %}
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}"/>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+{% endblock %}
+
+{% block navbar %}
+<p class="h2">
+    AWS SOC - compliance report
+</p>
+{% endblock %}

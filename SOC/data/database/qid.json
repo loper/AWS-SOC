@@ -1,0 +1,14 @@
+{
+    "372508": {
+        "description": "Oracle Critical Patch Update Advisory - April 2020",
+        "solution": "Update JRE"
+    },
+    "91622": {
+        "description": "Microsoft Windows Security Update for April 2020",
+        "solution": "Update Windows"
+    },
+    "100403": {
+        "description": "Microsoft Internet Explorer Security Update for April 2020",
+        "solution": "Update Windows"
+    }
+}
