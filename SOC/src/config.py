@@ -8,6 +8,8 @@ HOST_FILENAME = 'host.json'
 QID_FILENAME = 'qid.json'
 TOOLS_FILENAME = 'tools.json'
 
+TOOLS_COUNT = 3
+
 
 HEADER = ["status", "name", "ip", "os", "tanium", "qualys", "splunk", "qid", "last check"]
 Q_HEADER = ["host", "qid", "description", "solution"]

@@ -7,7 +7,7 @@ from os.path import exists
 
 from config import DATABASE_DIR, QID_FILENAME
 from config import HOSTS_DIR, HOST_FILENAME
-from config import TOOLS_FILENAME
+from config import TOOLS_FILENAME, TOOLS_COUNT
 
 
 def read_json(filename):
@@ -70,7 +70,7 @@ def get_qids(id_list, hosts_data):
 
 def get_status(tools_statuses):
     # no data found - NEUTRAL
-    if 'N/A' in tools_statuses:
+    if tools_statuses.count('N/A') == TOOLS_COUNT:
         return 'zero'
     # all tools are invalid - FATAL
     if not True in tools_statuses:
@@ -123,11 +123,6 @@ def get_hosts(sort_attr=None, only_vuln=False):
         data = read_json(host)
         # check tools data
         tools_found = check_tools(data)
-        if not tools_found:
-            # no tools data
-            data['tanium'] = 'N/A'
-            data['qualys'] = 'N/A'
-            data['splunk'] = 'N/A'
         # fix QID for host
         set_qid(data)
         # set overall status
@@ -154,6 +149,7 @@ def check_tools(host):
     # find json
     tools = find_tools(host['ip'])
     if not tools:
+        set_sec_tools_status(host, [])
         return False
     # get tools info
     data = read_json(tools)
@@ -162,6 +158,7 @@ def check_tools(host):
         return False
     # set data from tools status
     set_sec_tools_status(host, data)
+    # get file date
     set_last_change_time(host, tools)
     return True
 
@@ -169,12 +166,20 @@ def check_tools(host):
 def set_sec_tools_status(host_data, data):
     if 'tanium' in data:
         host_data['tanium'] = data['tanium']
+    else:
+        host_data['tanium'] = 'N/A'
     if 'qualys' in data:
         host_data['qualys'] = data['qualys']
+    else:
+        host_data['qualys'] = 'N/A'
     if 'splunk' in data:
         host_data['splunk'] = data['splunk']
+    else:
+        host_data['splunk'] = 'N/A'
     if 'qid' in data:
         host_data['qid'] = data['qid']
+    else:
+        host_data['qid'] = 0
 
 
 if __name__ == '__main__':

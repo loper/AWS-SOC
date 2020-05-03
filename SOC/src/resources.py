@@ -76,11 +76,10 @@ def run(dry_run=False):
         # save data
         if not dry_run:
             save_host_data(new_host, new_host['ip'])
+
     # clear old data
     if not dry_run:
         clear_terminated(host_list)
-
-    clear_terminated(host_list)  # XXX
 
 
 if __name__ == '__main__':
