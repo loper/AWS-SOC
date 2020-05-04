@@ -1,1 +1,1 @@
-{"ip": "172.31.38.24", "inst_id": "i-0a6f917bdf6b9b379", "img_id": "ami-0ea7295f82e08ffa2", "inst_type": "t2.medium", "name": "[GK][Windows][AS] HIS-SH", "os": "WIN", "key": "GKRP", "launch_time": "2020-05-01 09:20:26"}
+{"ip": "172.31.38.24", "inst_id": "i-0a6f917bdf6b9b379", "img_id": "ami-0ea7295f82e08ffa2", "inst_type": "t2.medium", "name": "[GK][Windows][AS] HIS-SH", "os": "WIN", "key": "GKRP", "launch_time": "2020-05-04 05:36:24"}

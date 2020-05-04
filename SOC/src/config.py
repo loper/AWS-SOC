@@ -9,6 +9,7 @@ QID_FILENAME = 'qid.json'
 TOOLS_FILENAME = 'tools.json'
 
 TOOLS_COUNT = 3
+DEFAULT_TOOLS_STATUS = 'N/A'
 
 
 HEADER = ["status", "name", "ip", "os", "tanium", "qualys", "splunk", "qid", "last check"]

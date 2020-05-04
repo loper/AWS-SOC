@@ -8,13 +8,18 @@ from os.path import isdir
 from shutil import rmtree
 
 import boto3
-
+from botocore.exceptions import ClientError
 from config import HOSTS_DIR, HOST_FILENAME
 
 
 def connect():
-    ec2_client = boto3.client('ec2')
-    response = ec2_client.describe_instances()['Reservations']
+    try:
+        ec2_client = boto3.client('ec2')
+        response = ec2_client.describe_instances()['Reservations']
+    except KeyError:
+        return None
+    except ClientError:
+        return None
     return response
 
 
@@ -43,11 +48,13 @@ def clear_terminated(hosts):
 
 def run(dry_run=False):
     response = connect()
+    if not response:
+        return None
     host_list = []
 
-    for response in response:
+    for data in response:
         # get host specs
-        inst = response['Instances'][0]
+        inst = data['Instances'][0]
         tags = inst['Tags']
 
         # set host info
@@ -80,6 +87,7 @@ def run(dry_run=False):
     # clear old data
     if not dry_run:
         clear_terminated(host_list)
+    return True
 
 
 if __name__ == '__main__':

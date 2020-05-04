@@ -82,13 +82,10 @@ def get_status(tools_statuses):
     return 'ok'
 
 
-def set_qid(data):
+def fix_qid(data):
     # fix missing data
     if not 'qid' in data:
         data['qid'] = 0
-    # clear out if all valid
-    # elif [data['tanium'], data['qualys'], data['splunk']].count(False) == 0:
-    #   data['qid'] = 0
 
 
 def sort_by(data, attr):
@@ -124,7 +121,7 @@ def get_hosts(sort_attr=None, only_vuln=False):
         # check tools data
         tools_found = check_tools(data)
         # fix QID for host
-        set_qid(data)
+        fix_qid(data)
         # set overall status
         data['status'] = get_status(
             [data['tanium'], data['qualys'], data['splunk'],

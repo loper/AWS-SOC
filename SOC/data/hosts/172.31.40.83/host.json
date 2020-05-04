@@ -1,1 +1,1 @@
-{"ip": "172.31.40.83", "inst_id": "i-07ec78b96d9242072", "img_id": "ami-0b021bf4820ba434b", "inst_type": "t2.xlarge", "name": "[GK][Linux][DevOps][BuildServer] Jenkins", "os": "LINUX", "key": "GKRP", "launch_time": "2020-05-01 07:00:43"}
+{"ip": "172.31.40.83", "inst_id": "i-07ec78b96d9242072", "img_id": "ami-0b021bf4820ba434b", "inst_type": "t2.xlarge", "name": "[GK][Linux][DevOps][BuildServer] Jenkins", "os": "LINUX", "key": "GKRP", "launch_time": "2020-05-04 07:00:43"}

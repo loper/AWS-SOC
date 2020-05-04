@@ -1,1 +1,1 @@
-{"ip": "172.31.35.214", "inst_id": "i-00eef68cd9b5bc4f3", "img_id": "ami-05289a1dd768ff016", "inst_type": "t2.large", "name": "[GK][Linux][BC][DEV] 5.9.5 custom", "os": "LINUX", "key": "CCNO", "launch_time": "2020-05-01 09:13:25"}
+{"ip": "172.31.35.214", "inst_id": "i-00eef68cd9b5bc4f3", "img_id": "ami-05289a1dd768ff016", "inst_type": "t2.large", "name": "[GK][Linux][BC][DEV] 5.9.5 custom", "os": "LINUX", "key": "CCNO", "launch_time": "2020-05-04 05:36:32"}

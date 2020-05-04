@@ -1,1 +1,1 @@
-{"ip": "172.31.32.12", "inst_id": "i-08cffdee5cd905319", "img_id": "ami-06d743667ab337d93", "inst_type": "t2.large", "name": "[GK][Linux][CM][DB]", "os": "LINUX", "key": "GKRP", "launch_time": "2020-05-01 07:00:43"}
+{"ip": "172.31.32.12", "inst_id": "i-08cffdee5cd905319", "img_id": "ami-06d743667ab337d93", "inst_type": "t2.large", "name": "[GK][Linux][CM][DB]", "os": "LINUX", "key": "GKRP", "launch_time": "2020-05-04 05:38:30"}
