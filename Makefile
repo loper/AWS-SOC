@@ -1,16 +1,9 @@
-build:
-	docker build -t player:latest .
-
 run:
-	docker run -d --rm -p 5000:5000 -v ~/Projekty/Acc/tvnplayer-prod/v1.2/data/:/home/player/data/:rw --name p1 player
-
-export:
-	docker image save player:latest > player-latest.tar
-
+	docker run -it -d --name soc -v /home/msy/Projekty/SOC/data:/data/:ro -p 5000:5000 soc:1.0
+build:
+	docker build -t soc:1.0 .
 clean:
-	find . -type d -name __pycache__ -exec rm -r {} \;
-	find . -type d -name .ropeproject -exec rm -r {} \;
-	find player/static/cache -type f -delete
-	find player/data -type f -iname \*.json -delete
-	find player/data -type f -iname \*.jpg -delete
+	find . -type d -name __pycache__ -exec rm -r {} \; || true
+	find . -type d -name .ropeproject -exec rm -r {} \; || true
+	docker rm -f soc || true
 
