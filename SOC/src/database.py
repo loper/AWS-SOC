@@ -53,7 +53,7 @@ def get_qids2(id_list, hosts_data):
 
 def get_qids(id_list, hosts_data):
     if not id_list:
-        return None
+        return []
     data = read_json('{}/{}'.format(DATABASE_DIR, QID_FILENAME))
     result = []
     for host in hosts_data:
@@ -114,6 +114,7 @@ def get_found_qids(hosts_data):
 
 
 def get_hosts(sort_attr=None, only_vuln=False):
+    # return list of hosts
     hosts = find_hosts()
     result = []
     for host in hosts:
@@ -137,6 +138,7 @@ def get_hosts(sort_attr=None, only_vuln=False):
 
 
 def set_last_change_time(host_data, tools_file):
+    # get timestamp from file
     changed = stat(tools_file).st_mtime
     changed_time = strftime('%Y-%m-%d %H:%M:%S', localtime(changed))
     host_data['last check'] = changed_time
@@ -161,6 +163,7 @@ def check_tools(host):
 
 
 def set_sec_tools_status(host_data, data):
+    # return status dependent on tools
     if 'tanium' in data:
         host_data['tanium'] = data['tanium']
     else:

@@ -1,7 +1,7 @@
 AAP_NAME = 'AWS SOC'
-APP_VERSION = '0.0.1'
+APP_VERSION = '1.0.0'
 
-DATA_DIR = '/home/msy/Projekty/SOC/data'
+DATA_DIR = '/data'
 HOSTS_DIR = '{}/hosts'.format(DATA_DIR)
 DATABASE_DIR = '{}/database'.format(DATA_DIR)
 HOST_FILENAME = 'host.json'
