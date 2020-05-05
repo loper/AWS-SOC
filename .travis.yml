@@ -1,0 +1,18 @@
+language: bash
+
+branches:
+  only:
+  - master
+
+services:
+  - docker
+
+before_install:
+  - docker build -t soc .
+
+script:
+  - docker run -it -d --rm soc /bin/sh -c "flask --version"
+  - docker run -it -d --rm soc /bin/sh -c "bash --version"
+  - docker run -it -d --rm soc /bin/sh -c "vim --version"
+  - docker run -it -d --rm soc /bin/sh -c "bash tests.sh"
+

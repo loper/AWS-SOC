@@ -1,11 +1,8 @@
-
-from os import mkdir
 from os.path import exists
 from json import dump
 
-from config import DATABASE_DIR, QID_FILENAME
-from config import HOSTS_DIR, HOST_FILENAME
-from config import TOOLS_FILENAME, TOOLS_FILENAME, TOOLS_LIST
+from config import HOSTS_DIR
+from config import TOOLS_FILENAME, TOOLS_LIST
 
 from database import read_json
 
@@ -57,7 +54,7 @@ def set_tool(host, name, status):
     # read file
     data = _load_tools(host)
     # set status as 1/0
-    if type(status) == bool:
+    if isinstance(status, bool):
         status = 1 if status else 0
     status = _to_int(status)
     data[name] = status

@@ -7,7 +7,7 @@ RUN apk add bash vim
 WORKDIR /home/soc
 COPY requirements.txt requirements.txt
 RUN python -m venv venv
-RUN venv/bin/pip install --upgrade pip boto3
+RUN venv/bin/pip install --upgrade pip boto3 pylint
 RUN venv/bin/pip install -r requirements.txt
 RUN venv/bin/pip install gunicorn
 
