@@ -9,12 +9,12 @@ from shutil import rmtree
 
 import boto3
 from botocore.exceptions import ClientError
-from config import HOSTS_DIR, HOST_FILENAME
+from config import HOSTS_DIR, HOST_FILENAME, REGION
 
 
 def connect():
     try:
-        ec2_client = boto3.client('ec2')
+        ec2_client = boto3.client('ec2', region_name=REGION)
         response = ec2_client.describe_instances()['Reservations']
     except KeyError:
         return None

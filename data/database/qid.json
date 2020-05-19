@@ -14,5 +14,9 @@
     "372480": {
         "description": "Apache Tomcat AJP File Inclusion Vulnerability",
         "solution": "Update Tomcat"
+    },
+    "370915": {
+        "description": "Java JMX Server Insecure Configuration Remote Code Execution Vulnerability",
+        "solution": "ps -ef|grep jmxremote.authenticate |grep -i -v -E 'jmxremote.host=(localhost|127\\.0\\.0\\.1)'"
     }
 }

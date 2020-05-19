@@ -1,5 +1,5 @@
 run:
-	docker run -it -d --name soc -v /home/msy/Projekty/SOC/data:/data/:ro -p 5000:5000 soc:1.0
+	docker run -it -d --name soc -v data:/data/ -p 5000:5000 soc:1.0
 build:
 	docker build -t soc:1.0 .
 clean:

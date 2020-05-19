@@ -1,10 +1,10 @@
 from os.path import exists
 from json import dump
 
+from database import read_json
+
 from config import HOSTS_DIR
 from config import TOOLS_FILENAME, TOOLS_LIST
-
-from database import read_json
 
 
 def init_tools_json(host):
