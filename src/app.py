@@ -6,16 +6,24 @@ from database import get_found_qids, get_hosts, get_qids
 from resources import run as run_refresh
 from api import set_qid, set_tool, clear_tools
 from config import HEADER, Q_HEADER
+from config import APP_NAME, APP_VERSION
 
 APP = Flask(__name__)
 Bootstrap(APP)
 
 
-@APP.route('/', defaults={'sort': 'name', 'vuln': False})
+@APP.route('/help')
+@APP.route('/h')
+@APP.route('/api')
+def show_help():
+    return render_template('help.html.j2', app=(APP_NAME, APP_VERSION))
+
+
+@APP.route('/', defaults={'sort': 'status', 'vuln': False})
 @APP.route('/sort=<sort>')
 @APP.route('/only_vuln=<vuln>')
 @APP.route('/sort=<sort>/only_vuln=<vuln>')
-def mainpage(sort='name', vuln=False):
+def mainpage(sort='status', vuln=False):
     # index
 
     # host details

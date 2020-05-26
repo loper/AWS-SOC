@@ -7,6 +7,7 @@ DATABASE_DIR = '{}/database'.format(DATA_DIR)
 HOST_FILENAME = 'host.json'
 QID_FILENAME = 'qid.json'
 TOOLS_FILENAME = 'tools.json'
+EXCLUDES_FILENAME = 'exclude.json'
 
 TOOLS_LIST = ['tanium', 'qualys', 'splunk']
 TOOLS_COUNT = 3

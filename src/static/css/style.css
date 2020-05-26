@@ -11,6 +11,9 @@ table {
     vertical-align: middle;
     font-family: monospace;
 }
+.table.help {
+    width: 50%;
+}
 th > a {
     color: black;
 }
@@ -116,4 +119,24 @@ p.h3 {
     text-decoration: overline;
     font-family: monospace;
     font-size: 22px;
+}
+span.host {
+    color: blue;
+    font-weight: bold;
+}
+span.qid {
+    color: darkred;
+    font-weight: bold;
+}
+span.toolname {
+    color: darkgreen;
+    font-weight: bold;
+}
+span.toolstat {
+    color: darkorange;
+    font-weight: bold;
+}
+tr.apiheader {
+    font-weight: bold;
+    background-color: #efefef;
 }

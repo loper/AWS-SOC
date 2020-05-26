@@ -1,0 +1,46 @@
+{% extends('base.html.j2') %}
+
+{% block content %}
+<div class="card">
+    <p class="h3 center"> {{ app[0] }} v{{ app[1] }} API help page</p>
+</div>
+
+<div class="card">
+
+<table class="table table-hover help">
+    <thead>
+    <tr class="bg-card">
+        <th class="center">request</th>
+        <th class="center">description</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr class="apiheader">
+            <td colspan=2>/tool</td>
+        </tr><tr>
+            <td>/tool/<span class="host">&lthost&gt</span>/<span class="toolname">&ltname&gt</span>/<span class="toolstat">&ltstatus&gt</span></td>
+            <td class="center">change <span class="toolstat">status (1 - ok, 2 - err)</span> of tool <span class="toolname">name (tanium, qualys, splunk)</span></td>
+        </tr><tr>
+            <td>/tool/<span class="host">&lthost&gt</span>/reset</td>
+            <td class="center">remove all statuses</td>
+        </tr>
+
+        <tr class="apiheader">
+            <td colspan=2>/qid</td>
+        </tr><tr>
+            <td>/qid/<span class="host">&lthost&gt</span>/<span class="qid">&ltqid&gt</span></td>
+            <td class="center">set vulnerability <span class="qid">QID</span> of host</td>
+        </tr><tr>
+            <td>/qid/<span class="host">&lthost&gt</span>/reset</td>
+            <td class="center">remove all QIDs from host</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+</div>
+
+{% endblock %}

@@ -8,6 +8,7 @@ from os.path import exists
 from config import DATABASE_DIR, QID_FILENAME
 from config import HOSTS_DIR, HOST_FILENAME
 from config import TOOLS_FILENAME, TOOLS_COUNT
+from config import EXCLUDES_FILENAME
 
 
 def read_json(filename):
@@ -121,6 +122,14 @@ def get_hosts(sort_attr=None, only_vuln=False):
         data = read_json(host)
         # check tools data
         tools_found = check_tools(data)
+        # check excludes
+        for tool in ('tanium', 'qualys', 'splunk'):
+            if tool not in data.keys():
+                continue        
+            if check_excludes(data['ip'], tool):
+                print(data['ip'], tool, check_excludes(data['ip'], tool))
+                data[tool] = 'N/A'
+                # data.pop(tool)
         # fix QID for host
         fix_qid(data)
         # set overall status
@@ -182,11 +191,29 @@ def set_sec_tools_status(host_data, data):
         host_data['qid'] = 0
 
 
+def get_excludes():
+    # read includes from database
+    data = read_json('{}/{}'.format(DATABASE_DIR, EXCLUDES_FILENAME))
+    return data
+
+
+def check_excludes(host, tool):
+    # check, if tool is excluded for given host
+    data = get_excludes()
+    if host not in data.keys():
+        return False
+    if tool in data[host] and isinstance(data[host][tool], bool):
+        return data[host][tool]
+    return False
+
+
 if __name__ == '__main__':
     # print(get_hosts())
     # host details
-    HOSTS_DATA = get_hosts()
-
+    HOSTS_DATA = get_hosts(sort_attr='name')
+    print(check_excludes('172.31.35.210', 'qualys'))
+    print(check_excludes('172.31.35.210', 'tanium'))
+    print(check_excludes('172.31.35.212', 'qualys'))
     # QIDs
     QID_LIST = get_found_qids(HOSTS_DATA)
     QIDS = get_qids(QID_LIST, HOSTS_DATA)
